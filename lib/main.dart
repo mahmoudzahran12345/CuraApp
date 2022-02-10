@@ -5,14 +5,15 @@ import 'modules/splash_home/splashscreen.dart';
 
 
 void main() {
-  runApp(const MyApp());
+  runApp( MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
      debugShowCheckedModeBanner: false,
       theme: ThemeData(
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
             )
         )
       ),
-      home: const SplashScreen(),
+      home:  SplashScreen(),
     );
   }
 }

@@ -37,6 +37,16 @@ dependencies:
   lottie: ^1.2.1
   animated_text_kit: ^4.2.1
   animated_splash_screen: ^1.1.0
+  carousel_slider: ^4.0.0
+  intl: ^0.17.0
+  conditional_builder: ^1.0.2
+  flutter_bloc: ^7.3.0
+  bloc: ^7.0.0
+  dio: ^4.0.0
+  hexcolor: ^2.0.3
+  shared_preferences: ^2.0.5
+
+
 
 
 

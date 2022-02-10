@@ -70,7 +70,7 @@ class SplashScreen2 extends StatelessWidget {
                 ],
               ),
             ),
-            nextScreen: const HomeScreen(),
+            nextScreen:  HomeScreen(),
             splashIconSize: 550,
             duration: 10000,
             splashTransition: SplashTransition.scaleTransition,
