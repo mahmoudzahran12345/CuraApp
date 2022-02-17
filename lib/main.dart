@@ -1,10 +1,20 @@
+import 'package:bloc/bloc.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:graduationproject/shared/cubit/login/blocobserver.dart';
 import 'package:graduationproject/shared/styles/colors.dart';
+import 'modules/Home/homescreen.dart';
+import 'modules/aboutapp/aboutscrren.dart';
+import 'modules/login/loginscreen.dart';
+import 'modules/register/RegisterScreen.dart';
 import 'modules/splash_home/splashscreen.dart';
 
 
-void main() {
+void main()async {
+  Bloc.observer = MyBlocObserver();
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp( MyApp());
 }
 
@@ -13,19 +23,19 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        appBarTheme:  AppBarTheme(
+        appBarTheme:  const AppBarTheme(
             systemOverlayStyle: SystemUiOverlayStyle(
-                statusBarColor: firstColor,
-                statusBarIconBrightness: Brightness.light
+                statusBarColor: Colors.black12,
+                statusBarIconBrightness: Brightness.light,
             )
-        )
+        ),
+
       ),
-      home:  SplashScreen(),
+      home:   HomeScreen(),
     );
   }
 }

@@ -45,6 +45,20 @@ dependencies:
   dio: ^4.0.0
   hexcolor: ^2.0.3
   shared_preferences: ^2.0.5
+  firebase_core: ^1.8.0
+  firebase_auth: ^3.1.4
+  cloud_firestore: ^1.0.4
+  firebase_storage: "^10.1.0"
+  firebase_messaging: ^11.2.0
+  toast: ^0.1.5
+  fluttertoast: ^8.0.8
+  flutter_login: ^3.1.0
+  webview_flutter: ^3.0.0
+
+
+
+
+
 
 
 

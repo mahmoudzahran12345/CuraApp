@@ -12,7 +12,7 @@ class SearchScreen extends StatelessWidget {
       body:Padding(
         padding: const EdgeInsets.all(20.0),
         child: Form(
-          key: formkey,
+          key: formKey,
           child: Column(
             children: [
               TextFormField(

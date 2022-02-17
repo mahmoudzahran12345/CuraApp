@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "950020409576",
+    "project_id": "curaapp-a8d7b",
+    "storage_bucket": "curaapp-a8d7b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950020409576:android:48644fdeec7f1ec44ea15d",
+        "android_client_info": {
+          "package_name": "com.example.graduationproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950020409576-lqrqs4k1cls2ifoatiucci0tirrgdra1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.graduationproject",
+            "certificate_hash": "ec9ff31800d3a66df6f46538dea90bae7ab7b023"
+          }
+        },
+        {
+          "client_id": "950020409576-nfqsnl1blerbrueskkvmgn3ttbe4hfkp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1ZU6EJWRICN2xQbMVmvMCi5G3V2u1F-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950020409576-nfqsnl1blerbrueskkvmgn3ttbe4hfkp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
