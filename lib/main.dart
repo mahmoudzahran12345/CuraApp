@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:graduationproject/shared/cubit/login/blocobserver.dart';
 import 'package:graduationproject/shared/styles/colors.dart';
+import 'modules/ForgetPassword/forgetpasswordscreen.dart';
 import 'modules/Home/homescreen.dart';
 import 'modules/aboutapp/aboutscrren.dart';
 import 'modules/login/loginscreen.dart';
@@ -30,12 +31,14 @@ class MyApp extends StatelessWidget {
         appBarTheme:  const AppBarTheme(
             systemOverlayStyle: SystemUiOverlayStyle(
                 statusBarColor: Colors.black12,
-                statusBarIconBrightness: Brightness.light,
+                statusBarBrightness:  Brightness.dark,
+
+
             )
         ),
 
       ),
-      home:   HomeScreen(),
+      home:    LoginPage(),
     );
   }
 }

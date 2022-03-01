@@ -251,7 +251,7 @@ class ProfileScreen extends StatelessWidget {
                     suffixIcon: IconButton(
                         onPressed: (){},
                         icon:  Icon(
-                          Icons.favorite,color: secondColor,
+                          Icons.location_city,color: secondColor,
                         )),
                   ),
                   keyboardType:TextInputType.name ,
@@ -288,8 +288,6 @@ class ProfileScreen extends StatelessWidget {
 
                 ),
               ),
-
-
             ],
           ),
         ),

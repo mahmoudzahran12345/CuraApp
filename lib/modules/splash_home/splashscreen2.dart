@@ -14,14 +14,14 @@ class SplashScreen2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: firstColor,
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: firstColor,
+        backgroundColor: Colors.white,
         elevation: 0,
         title: Center(
           child: DefaultTextStyle(
-      style: const TextStyle(
-      fontSize: 30.0, color: Colors.white
+      style:  TextStyle(
+      fontSize: 30.0, color: secondColor
       ),
       child: AnimatedTextKit(
           animatedTexts: [
@@ -51,10 +51,10 @@ class SplashScreen2 extends StatelessWidget {
                       right: 35.0
                     ),
                     child: DefaultTextStyle(
-                      style: const TextStyle(
+                      style:  TextStyle(
                           fontSize: 30.0,
                           fontWeight: FontWeight.bold,
-                          color: Colors.white
+                          color: secondColor
                       ),
                       child: AnimatedTextKit(
                         animatedTexts: [
@@ -75,7 +75,7 @@ class SplashScreen2 extends StatelessWidget {
             duration: 10000,
             splashTransition: SplashTransition.scaleTransition,
             pageTransitionType:PageTransitionType.rightToLeftWithFade ,
-            backgroundColor: firstColor,
+            backgroundColor: Colors.white,
             animationDuration: const Duration(seconds: 1),
 
 

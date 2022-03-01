@@ -1,5 +1,4 @@
 abstract class CuraLoginStates{
-
 }
 class CuraLoginInatialState extends CuraLoginStates{}
 class CuraLoginLoadingState extends CuraLoginStates{}
@@ -13,7 +12,18 @@ class CuraLoginErrorState extends CuraLoginStates{
   CuraLoginErrorState(this.error);
 }
 class CuraCreateLoadingState extends CuraLoginStates{}
-
 class ChangePassword extends CuraLoginStates{}
-class opencemary1 extends CuraLoginStates{}
-class openGallary2 extends CuraLoginStates{}
+class SignGoggleSuccessfulState extends CuraLoginStates{}
+class SignGoggleErrorState extends CuraLoginStates{
+  final String error;
+
+  SignGoggleErrorState(this.error);
+}
+class CuraLoginGoogleLoadingState extends CuraLoginStates{}
+class ResetpasswordSuccessfulState extends CuraLoginStates{}
+class ResetpasswordErrorState extends CuraLoginStates{
+  final String error;
+
+  ResetpasswordErrorState(this.error);
+}
+class ResetpasswordLoadingState extends CuraLoginStates{}

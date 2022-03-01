@@ -12,15 +12,15 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: firstColor,
+      backgroundColor: Colors.white,
       appBar: AppBar(
-      backgroundColor: firstColor,
+      backgroundColor: Colors.white,
       title: Center(
         child: DefaultTextStyle(
-          style:  const TextStyle(
+          style:   TextStyle(
             fontSize: 30.0,
             fontFamily: 'Canterbury',
-            color: Colors.white,
+            color: secondColor,
             fontWeight: FontWeight.bold
           ),
           child: AnimatedTextKit(
@@ -42,11 +42,12 @@ class SplashScreen extends StatelessWidget {
           child: AnimatedSplashScreen(
               splash:SingleChildScrollView(
                 child: Column(
-                  children:   const [
+                  children:const [
                     Image(
                       image: AssetImage('assets/Images/logo12.png'),
                       width: 350,
                       height: 250,
+
                     ) ,
                   ],
                 ),
@@ -56,7 +57,7 @@ class SplashScreen extends StatelessWidget {
             duration: 4000,
             splashTransition: SplashTransition.fadeTransition,
             pageTransitionType:PageTransitionType.rightToLeftWithFade ,
-            backgroundColor: firstColor,
+            backgroundColor: Colors.white,
             animationDuration: const Duration(seconds: 3),
 
 

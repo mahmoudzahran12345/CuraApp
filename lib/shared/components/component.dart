@@ -21,7 +21,7 @@ Widget ItemDrawer({
         child: Icon(
           iconData,
           size: 30,
-          color:  Colors.white,
+          color:  secondColor,
         ),
       ),
       Expanded(
@@ -51,7 +51,8 @@ Widget textformfeild({
   required String name,
   required IconData icon,
   required TextEditingController edit,
-  IconData? iconData
+  IconData? iconData,
+  required Function function
 
 })=> Container(
   decoration: BoxDecoration(
@@ -160,3 +161,24 @@ Widget linearvater()=> Padding(
 
   ),
 );
+void showDialog2(BuildContext context,String title) {
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        backgroundColor: secondColor,
+        title:  const Text("Alert!!",style: TextStyle(color: Colors.white),),
+        content:   Text(title,style: const TextStyle(color: Colors.white)),
+        actions: <Widget>[
+          FlatButton(
+            child:  const Text("OK",style: TextStyle(color: Colors.white)),
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+          ),
+        ],
+      );
+    },
+  );
+}
+

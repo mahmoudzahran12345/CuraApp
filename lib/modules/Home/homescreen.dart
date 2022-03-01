@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
 backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: firstColor,
+        backgroundColor: Colors.white,
         iconTheme: IconThemeData(color: secondColor),
         elevation: 0,
         actions:  [
@@ -523,8 +523,7 @@ backgroundColor: Colors.white,
         ),
       ),
       drawer: Drawer(
-        backgroundColor: firstColor,
-
+        backgroundColor: Colors.white,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.end,
@@ -532,7 +531,7 @@ backgroundColor: Colors.white,
             Container(
               width: double.infinity,
               height: 95,
-              color: firstColor,
+              color: Colors.white,
               child:   Lottie.asset('assets/Images/zzz.json'),
             ),
             const SizedBox(height: 30,),
