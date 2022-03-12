@@ -44,7 +44,7 @@ class CuraLoginCubit extends Cubit<CuraLoginStates> {
   }
   final GoogleSignIn _googleSignIn = GoogleSignIn(scopes: ['email']);
   FirebaseAuth firebaseAuth = FirebaseAuth.instance;
-  void googleSignIn()async{
+  Future googleSignIn()async{
     emit(CuraLoginGoogleLoadingState());
     final GoogleSignInAccount? googleSignInAccount = await _googleSignIn.signIn();
     GoogleSignInAuthentication googleSignInAuthentication=await googleSignInAccount?.authentication as GoogleSignInAuthentication;

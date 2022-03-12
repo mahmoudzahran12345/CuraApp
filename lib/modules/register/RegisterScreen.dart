@@ -23,9 +23,8 @@ class RegisterScreen extends StatelessWidget {
       create: (context)=>CubitRegister(),
       child: BlocConsumer<CubitRegister,CuraRegister>(
         listener: (context,state){
-          if(state is CuraRegisterLoadingState){
+          if(state is CuraCreateSuccessfulState){
             navigatto(context, const PageScreen1());
-
           }
         },
         builder: (context,state){

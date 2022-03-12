@@ -3,7 +3,7 @@ class DoctorUserModel
   late String name;
   late String email;
   late String phone;
-  late String uId;
+   String? uId;
   late String gender;
 
   DoctorUserModel({

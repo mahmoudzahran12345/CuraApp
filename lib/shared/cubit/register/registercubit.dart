@@ -11,7 +11,6 @@ import 'package:graduationproject/shared/cubit/register/registerstattes.dart';
 class CubitRegister extends Cubit<CuraRegister>{
   CubitRegister() : super (CuraRegisterInatialState());
   static CubitRegister get(context) => BlocProvider.of(context);
-
   void userRegister({
     required String name,
     required String email,
@@ -46,6 +45,7 @@ class CubitRegister extends Cubit<CuraRegister>{
     );
 
     FirebaseFirestore.instance.collection('Users').doc(uId).set(model.toMap()).then((value) {
+      print(uId);
       emit(CuraCreateSuccessfulState());
     }).catchError((error){
       emit(CuraCreateErrorState(error.toString()));
@@ -59,5 +59,6 @@ class CubitRegister extends Cubit<CuraRegister>{
     suffix = ispassword ?Icons.visibility:Icons.visibility_off;
     emit(changepasswordRegister());
   }
+
 
 }

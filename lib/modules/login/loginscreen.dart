@@ -1,4 +1,3 @@
-import 'package:bot_toast/bot_toast.dart';
 import 'package:conditional_builder/conditional_builder.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -8,6 +7,7 @@ import 'package:graduationproject/shared/components/component.dart';
 import 'package:graduationproject/shared/cubit/login/loginstate.dart';
 import 'package:graduationproject/shared/styles/colors.dart';
 import '../../layout/fadeAnaimation/fadeanamationscreen.dart';
+import '../../layout/widget/textfield.dart';
 import '../../shared/components/constant.dart';
 import '../../shared/cubit/login/loginCubit.dart';
 import '../ForgetPassword/forgetpasswordscreen.dart';
@@ -23,6 +23,10 @@ class LoginPage extends StatelessWidget{
           if(state is SignGoggleSuccessfulState){
             navigatto(context, const PageScreen1());
             showtoast(text: 'Successful', state: ToastState.SUCCESS);
+          }
+          else if(state is SignGoggleErrorState){
+            showDialog2(context,"Email is not correct");
+
           }
           else if(state is CuraLoginSuccessfulState){
             navigatto(context, const PageScreen1());
@@ -197,49 +201,28 @@ class LoginPage extends StatelessWidget{
                                     )),
                                     ConditionalBuilder(
                                       condition:state is !CuraLoginGoogleLoadingState ,
-                                      builder:(context)=>InkWell(
-                                        child: Container(
-                                            height: 55.0,
-                                            width: double.infinity,
-                                            decoration: BoxDecoration(
-                                                color: secondColor,
-                                                borderRadius: BorderRadius.circular(25.0)
-                                            ),
-                                            child:  Row(
-                                              mainAxisAlignment: MainAxisAlignment.center,
-                                              children: const [
-                                                Padding(
-                                                  padding: EdgeInsets.only(left: 15.0,bottom: 10.0),
-                                                  child: Image(
-                                                    image: AssetImage('assets/Images/google.png'),
-                                                  ),
-                                                ),
-                                                Text(
-                                                  'Google',
-                                                  style: TextStyle(
-                                                      color: Colors.white,
-                                                      fontSize: 30,
-                                                      fontWeight: FontWeight.bold
-                                                  ),
-                                                  textAlign: TextAlign.center,
-
-                                                ),
-                                              ],
-                                            )
+                                      builder:(context)=>Container(
+                                        decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(25),
+                                            color: secondColor
                                         ),
-                                        onTap: (){
-
+                                        child: FlatButton(onPressed: (){
                                           CuraLoginCubit.get(context).googleSignIn();
-                                          if(state is SignGoggleSuccessfulState){
-
-                                          }
-                                          else{
-                                            const AlertDialog(
-                                              title: Text("Error Login"),
-                                              content: Text("This is my message"),
-                                            );
-                                          }
                                         },
+                                            child: Row(
+                                              children: [
+                                                const Image(
+                                                  image: AssetImage('assets/Images/google.png'),
+                                                  height: 40,
+                                                  width: 40,
+                                                ),
+                                                const SizedBox(width: 50,),
+                                                CustomText(title: 'Sign in with google',color: Colors.white,
+                                                  fontSize: 20,
+
+                                                )
+                                              ],
+                                            )),
                                       ),
                                       fallback: (context)=>const Align(
                                         alignment: AlignmentDirectional.center,

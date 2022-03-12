@@ -1,5 +1,4 @@
 abstract class CuraRegister {
-
 }
 class CuraRegisterInatialState extends CuraRegister{}
 class CuraRegisterLoadingState extends CuraRegister{}
@@ -17,6 +16,7 @@ class CuraCreateErrorState extends CuraRegister{
   final String error;
   CuraCreateErrorState(this.error);
 }
-
-
 class changepasswordRegister extends CuraRegister{}
+class UpdateUserCuraLoading extends CuraRegister{}
+class UpdateUserCuraSuccessful extends CuraRegister{}
+class UpdateUserCuraError extends CuraRegister{}

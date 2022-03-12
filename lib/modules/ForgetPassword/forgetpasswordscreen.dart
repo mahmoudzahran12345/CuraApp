@@ -64,8 +64,6 @@ class ForgetPasswordScreen extends StatelessWidget {
                                     fontSize: 20.0,
                                     color: secondColor,
                                     fontWeight: FontWeight.bold,
-
-
                                   )
                               ),
                               keyboardType:TextInputType.emailAddress ,
@@ -85,6 +83,7 @@ class ForgetPasswordScreen extends StatelessWidget {
 
                           ),
                           const SizedBox(height: 20.0),
+
                           ConditionalBuilder(
                             condition:state is !ResetpasswordLoadingState ,
                             builder:(context)=>SizedBox(

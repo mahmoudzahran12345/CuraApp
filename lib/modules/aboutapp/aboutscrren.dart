@@ -36,12 +36,12 @@ class AboutApp extends StatelessWidget {
                       child: CircleAvatar(
                         radius: 74,
                         backgroundColor: secondColor,
-                        child: Text(
+                        child: const Text(
                           'CURA',
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                            color: firstColor
+                            color: Colors.white
                           ),
                         ) ,
                       ),
@@ -53,10 +53,11 @@ class AboutApp extends StatelessWidget {
                         width: 200,
                         height: 250,
                         decoration: BoxDecoration(
-                          border: Border.all(color: firstColor),
+                          color: secondColor,
+                          border: Border.all(color: Colors.white),
                         ),
-                        child: Padding(
-                          padding: const EdgeInsets.only(left: 8.0),
+                        child: const Padding(
+                          padding: EdgeInsets.only(left: 8.0),
                           child: Text(
                             'we are medical app\nand we will\ngive you all your'
                                 '\nneeds about\nyour health and \nThe diseases you'
@@ -64,7 +65,7 @@ class AboutApp extends StatelessWidget {
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 22.0,
-                              color: firstColor
+                              color: Colors.white
                             ),
                           ),
                         ),
@@ -74,74 +75,120 @@ class AboutApp extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20,),
-              Container(
-                width: double.infinity,
-                //height: 225,
-                color: firstColor,
-                child: Row(
-                  children:  [
-                   Stack(
-                     alignment: AlignmentDirectional.center,
-                     children: [
-                       Image(
-                           color: secondColor,
-                           image: const AssetImage('assets/Images/aboutapp1.png'
+                Padding(
+                  padding: const EdgeInsets.only(left: 10,right: 10),
+                  child: Container(
+                  width: double.infinity,
+                  height: 150.0,
+                    decoration: BoxDecoration(
+                        color: secondColor,
+                        borderRadius: BorderRadiusDirectional.circular(20.0),
 
-                           )
-                       ),
-                       Text(
-                         'Contact us',
-                         style: TextStyle(
-                           color: firstColor,
-                           fontWeight: FontWeight.bold,
-                           fontSize: 22.0
-                         ),
-                       )
-                     ],
-                   ),
-                      const SizedBox(width: 20.0),
-                      Expanded(
-                        child: InkWell(
-                         onTap: (){},
-                         child: const Image(image: AssetImage('assets/Images/icons8-facebook-30.png',
-                         )
+                    ),
+                    child: const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Text(
+                        'Our app is a medical app ,where you can diagnose your illness within a '
+                        'minute ,  and also provide you with corresponding medicine.'
+                        'You can also follow up your health throw our app',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white
 
-                         ),
-                     ),
+                        ),
                       ),
-                      const SizedBox(width: 10.0),
-                      Expanded(
-                        child: InkWell(
-                         onTap: (){},
-                         child: const Image(image: AssetImage('assets/Images/icon82.png',
-                         )
+                    ),
 
-                         ),
-                     ),
-                      ),
-                      const SizedBox(width: 10.0),
-                      Expanded(
-                        child: InkWell(
-                          onTap: (){},
-                         child: const Image(image: AssetImage('assets/Images/icon8.png',
-                         )
+              ),
+                ),
+                const SizedBox(height: 20,),
+                Padding(
+                padding: const EdgeInsets.only(left: 10,right: 10),
+                child: Container(
+                  width: double.infinity,
+                  height: 220.0,
+                  decoration: BoxDecoration(
+                    color: secondColor,
+                    borderRadius: BorderRadiusDirectional.circular(20.0),
 
-                         ),
-                     ),
-                      ),
+                  ),
+                  child:  Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Column(
+                      children: const [
+                        Text(
+                          'How to use cura?',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 25.0,
+                              color: Colors.greenAccent
 
+                          ),
+                        ),
+                        Text(
+                          '1.regist in our app\n2.choose model gender\n3.Select your illness area in the model.\n'
+                          '4. Select the symptoms you have.\n5. Finally you will receive a report which have the name of diseases and its corresponding medicine',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20.0,
+                              color: Colors.white
 
+                          ),
+                        ),
+                      ],
+                    )
+                  ),
 
-
-
-
-
-
-
-
-                  ],
                 ),
               ),
+                const SizedBox(height: 20,),
+                Padding(
+                padding: const EdgeInsets.only(left: 10,right: 10),
+                child: Container(
+                  width: double.infinity,
+                  height: 230.0,
+                  decoration: BoxDecoration(
+                    color: secondColor,
+                    borderRadius: BorderRadiusDirectional.circular(20.0),
+
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: const [
+                      Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text(
+                          'NOTE',
+                          style: TextStyle(
+                              fontSize: 25.0,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.greenAccent
+
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text('If you Select an urgent area such as (brain, heart, etc.) '
+                            'The app will ask you to open your location so that it can reach you to the nearest doctor or hospital.'
+                            ' Because any pain in such area the app can not diagnose the reason for it',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20.0,
+                            color: Colors.white
+                          ),
+                          textAlign: TextAlign.start,),
+                      )
+                    ],
+                  )
+
+                ),
+              ),
+
+
+
 
 
             ],

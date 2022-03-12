@@ -5,18 +5,13 @@ import 'package:graduationproject/modules/aboutapp/aboutscrren.dart';
 import 'package:graduationproject/modules/profile/profilescreen.dart';
 import 'package:graduationproject/modules/login/loginscreen.dart';
 import 'package:graduationproject/modules/register/RegisterScreen.dart';
-import 'package:graduationproject/modules/search/searchscreen.dart';
 import 'package:graduationproject/shared/components/component.dart';
-import 'package:graduationproject/shared/components/constant.dart';
 import 'package:graduationproject/shared/styles/colors.dart';
 import 'package:lottie/lottie.dart';
-
 import '../../layout/webview/webviewscreen.dart';
 
-
-
 class HomeScreen extends StatelessWidget {
-
+  const HomeScreen({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
 
@@ -27,11 +22,8 @@ backgroundColor: Colors.white,
         iconTheme: IconThemeData(color: secondColor),
         elevation: 0,
         actions:  [
-          IconButton(onPressed: (){
-            navigatto(context,const SearchScreen());
-          }, icon:  Icon(Icons.search_outlined,size: 30,color: secondColor,)),
-          TextButton(onPressed: (){
 
+          TextButton(onPressed: (){
             navigatto(context,  LoginPage());
           }, child: const Text('Login')),
           TextButton(onPressed: (){
@@ -76,8 +68,6 @@ backgroundColor: Colors.white,
                                 'assets/Images/home2.png'),
                             fit: BoxFit.cover),
                       ),
-
-
 
                     ),
                   ),
@@ -524,85 +514,95 @@ backgroundColor: Colors.white,
       ),
       drawer: Drawer(
         backgroundColor: Colors.white,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            Container(
-              width: double.infinity,
-              height: 95,
-              color: Colors.white,
-              child:   Lottie.asset('assets/Images/zzz.json'),
-            ),
-            const SizedBox(height: 30,),
-            linearvater(),
-            const SizedBox(height: 5),
-            Row(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(left:20.0),
-                  child: CircleAvatar(
-                    radius: 24,
-                    backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-                    child:  const CircleAvatar(
-                      radius: 20.0,
-                      backgroundImage: AssetImage('assets/Images/girl .jpg'),
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Container(
+                width: double.infinity,
+                height: 95,
+                color: Colors.white,
+                child:   Lottie.asset('assets/Images/zzz.json'),
+              ),
+              const SizedBox(height: 30,),
+              linearvater(),
+              const SizedBox(height: 5),
+              Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left:20.0),
+                    child: CircleAvatar(
+                      radius: 24,
+                      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+                      child:  const CircleAvatar(
+                        radius: 20.0,
+                        backgroundImage: AssetImage('assets/Images/girl .jpg'),
+                      ),
                     ),
                   ),
-                ),
-                Column(
-                  children: [
-                    Text('MAHMOUDZAHRAN',style: TextStyle(color: secondColor),
-                    ),
-                    const SizedBox(height: 5,),
-                    Text(
-                      'mhmwdzhran02@gmail.com',
-                      style: TextStyle(color: secondColor),
-                      overflow: TextOverflow.ellipsis,
-                      maxLines: 1,
-                      textAlign: TextAlign.justify,
-                    )
-                  ],
-                )
-              ],
-            ),
-            const SizedBox(height: 5.0),
-            linearvater(),
-            const SizedBox(height: 25.0),
-            InkWell(
-                onTap: (){
-                  Navigator.pop(context);
-                  navigatto(context,const ProfileScreen());
-                },
-                child: ItemDrawer(title: 'Profile'
-                  ,iconData: Icons.account_circle,)),
-            InkWell(
-                onTap: (){
-                  Navigator.pop(context);
-                  navigatto(context, HomeScreen());
-                },
-                child: ItemDrawer(title: 'Home',iconData: Icons.home,)),
-            InkWell(
-                onTap: (){
-                  Navigator.pop(context);
-                  navigatto(context, AboutApp());
-                },
-                child: ItemDrawer(title: 'AboutApp',iconData: Icons.supervisor_account_outlined,)),
-            InkWell(
-                onTap: (){
-                  Navigator.pop(context);
-                  navigatto(context, AboutApp());
-                },
-                child: ItemDrawer(title: 'LogOut',iconData: Icons.logout,)),
-            Image(
-              color: secondColor,
+                  Column(
+                    children: [
+                      Text('MAHMOUDZAHRAN',style: TextStyle(color: secondColor),
+                      ),
+                      const SizedBox(height: 5,),
+                      Text(
+                        'mhmwdzhran02@gmail.com',
+                        style: TextStyle(color: secondColor),
+                        overflow: TextOverflow.ellipsis,
+                        maxLines: 1,
+                        textAlign: TextAlign.justify,
+                      )
+                    ],
+                  )
+                ],
+              ),
+              const SizedBox(height: 5.0),
+              linearvater(),
+              const SizedBox(height: 25.0),
+              InkWell(
+                  onTap: (){
+                    Navigator.pop(context);
+                    navigatto(context,const ProfileScreen());
+                  },
+                  child: ItemDrawer(title: 'Profile'
+                    ,iconData: Icons.account_circle,)),
+              InkWell(
+                  onTap: (){
+                    Navigator.pop(context);
+                    navigatto(context, HomeScreen());
+                  },
+                  child: ItemDrawer(title: 'Home',iconData: Icons.home,)),
+              InkWell(
+                  onTap: (){
+                    Navigator.pop(context);
+                    navigatto(context, AboutApp());
+                  },
+                  child: ItemDrawer(title: 'AboutApp',iconData: Icons.supervisor_account_outlined,)),
+              InkWell(
+                  onTap: (){
+                    Navigator.pop(context);
 
-                image: AssetImage('assets/Images/bottom.png',
+                  },
+                  child: ItemDrawer(title: 'Location'
+                    ,iconData: Icons.location_city,)),
+              InkWell(
+                  onTap: (){
+                    Navigator.pop(context);
+                    navigatto(context, AboutApp());
+                  },
+                  child: ItemDrawer(title: 'LogOut',iconData: Icons.logout,)),
+
+              Image(
+                color: secondColor,
+
+                  image: AssetImage('assets/Images/bottom.png',
 
 
-                )),
+                  )),
 
-          ],
+            ],
+          ),
         ),
 
       ),

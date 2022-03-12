@@ -1,3 +1,4 @@
+import 'package:flip_card/flip_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -181,4 +182,46 @@ void showDialog2(BuildContext context,String title) {
     },
   );
 }
-
+ Widget renderContent(context) {
+  return Card(
+    elevation: 0.0,
+    margin: const EdgeInsets.only(left: 32.0, right: 32.0, top: 20.0, bottom: 0.0),
+    color: secondColor,
+    child: FlipCard(
+      //flipOnTouch: false,
+      direction: FlipDirection.HORIZONTAL,
+      speed: 1000,
+      onFlipDone: (status) {
+        print(status);
+      },
+      front: Container(
+        decoration:  BoxDecoration(
+          color: secondColor,
+          borderRadius: BorderRadius.all(const Radius.circular(8.0)),
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const <Widget>[
+            Image(image: AssetImage('assets/Images/file3.png')),
+            Text('Rotate',
+                style: TextStyle(color: Colors.amber,fontSize: 40.0,fontWeight: FontWeight.bold)),
+          ],
+        ),
+      ),
+      back: Container(
+        decoration:  BoxDecoration(
+          color: secondColor,
+          borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            const Image(image: AssetImage('assets/Images/file2.png')),
+            Text('Back',
+                style: TextStyle(color: Colors.amber,fontSize: 40.0,fontWeight: FontWeight.bold)),
+          ],
+        ),
+      ),
+    ),
+  );
+}
