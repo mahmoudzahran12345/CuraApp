@@ -2,14 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:graduationproject/shared/components/component.dart';
 import 'package:graduationproject/shared/styles/colors.dart';
-
-import 'babyscreen.dart';
 import 'famelescreen.dart';
 import 'malescreen.dart';
-
 class PageScreen1 extends StatelessWidget {
   const PageScreen1({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +15,7 @@ class PageScreen1 extends StatelessWidget {
         title:  const Text(
           'Please Choose Gender',
           style: TextStyle(
-              fontSize: 30.0,
+              fontSize: 25.0,
               fontWeight: FontWeight.bold,
               color: Colors.amber
           ),
@@ -130,40 +126,7 @@ class PageScreen1 extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Expanded(
-                        child: Column(
-                          children: [
-                            const CircleAvatar(
-                              radius: 44,
-                              backgroundColor: Colors.amber,
-                              child:  CircleAvatar(
-                                radius: 40.0,
-                                backgroundImage: AssetImage('assets/Images/baby2.png'),
-                              ),
-                            ),
-                            const SizedBox(height: 10.0),
-                            Container(
-                              width: 89,
-                              height: 30,
-                              color: Colors.amber,
-                              child: MaterialButton(
-                                onPressed: (){
-                                      navigatto(context, const BabyScreen());
-                                },
-                                child: const Text(
-                                  'Baby',
-                                  style: TextStyle(
-                                    color: Colors.black,
-                                  ),
-                                ),
 
-
-                              ),
-                            )
-
-                          ],
-                        ),
-                      )
                     ],
                   ),
                 )

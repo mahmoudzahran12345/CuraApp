@@ -14,6 +14,7 @@ import 'modules/page1/page1screen.dart';
 import 'modules/profile/profilescreen.dart';
 import 'modules/register/RegisterScreen.dart';
 import 'modules/splash_home/splashscreen.dart';
+import 'modules/symptoms/symptomssccren.dart';
 
 void main()async {
   Bloc.observer = MyBlocObserver();
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
             )
         ),
       ),
-      home: const SplashScreen(),
+      home:  SymptomsScrren(),
     );
   }
 }

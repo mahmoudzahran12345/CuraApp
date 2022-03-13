@@ -44,7 +44,7 @@ class SplashScreen extends StatelessWidget {
                 child: Column(
                   children:const [
                     Image(
-                      image: AssetImage('assets/Images/logo12.png'),
+                      image: AssetImage('assets/Images/logo.png'),
                       width: 350,
                       height: 250,
 
@@ -66,4 +66,5 @@ class SplashScreen extends StatelessWidget {
       )
     );
   }
+
 }

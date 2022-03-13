@@ -7,6 +7,7 @@ import 'package:graduationproject/shared/cubit/curaappcubit/curaapp.dart';
 import 'package:graduationproject/shared/cubit/curaappcubit/curaappstate.dart';
 import 'package:graduationproject/shared/styles/colors.dart';
 
+import '../../layout/widget/textfield.dart';
 import '../../shared/components/component.dart';
 
 class MaleScreen extends StatelessWidget {
@@ -14,37 +15,41 @@ class MaleScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context)=>CuraApp(),
-      child: BlocConsumer<CuraApp,CuraAppState>(
-        listener: (context,state){},
-        builder: (context,state){
-          return Scaffold(
-              backgroundColor: secondColor,
-              body: Padding(
-                padding:  const EdgeInsets.only(top: 20.0),
-                child: Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      const Image(
-                        image: AssetImage('assets/Images/file3.png'),
-                      ),
-                      Container(
-                        width: 120,
-                        height: 40,
-                        color: Colors.white,
-                        child: TextButton(onPressed: (){
-                          navigatto(context, const MaleScreenRotate());
-                        }, child: const Text('Rotate',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),)),
-                      )
-                    ],
+
+    return Scaffold(
+        backgroundColor: secondColor,
+
+        body: Padding(
+          padding:  const EdgeInsets.all( 20.0),
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                CustomText(title: 'Choose a place for pain',color: Colors.amber,fontSize: 25,alignment: Alignment.center),
+                const SizedBox(height: 10,),
+                Container(
+                  color: Colors.black54,
+                  width: double.infinity,
+                  height: 490,
+                  child: const Image(
+                    image: AssetImage('assets/Images/file5.png'),
                   ),
                 ),
-              )
-          );
-        },
-      ),
+                const SizedBox(height: 10.0,),
+                Container(
+                  width: 120,
+                  height: 40,
+                  color: Colors.amber,
+                  child: TextButton(onPressed: (){
+                    navigatto(context, const MaleScreenRotate());
+                  }, child: const Text('Rotate',style: TextStyle(fontWeight: FontWeight.bold,color:Colors.black,fontSize: 20),)),
+                )
+              ],
+            ),
+          ),
+        )
     );
+
   }
+
 }
