@@ -9,6 +9,7 @@ import 'package:graduationproject/shared/styles/colors.dart';
 
 import '../../layout/widget/textfield.dart';
 import '../../shared/components/component.dart';
+import '../symptoms/symptomssccren.dart';
 
 class MaleScreen extends StatelessWidget {
   const MaleScreen({Key? key}) : super(key: key);
@@ -31,8 +32,11 @@ class MaleScreen extends StatelessWidget {
                   color: Colors.black54,
                   width: double.infinity,
                   height: 490,
-                  child: const Image(
-                    image: AssetImage('assets/Images/file5.png'),
+                  child: InkWell(
+                    onTap: (){navigatto(context, SymptomsScrren());},
+                    child: const Image(
+                      image: AssetImage('assets/Images/file5.png'),
+                    ),
                   ),
                 ),
                 const SizedBox(height: 10.0,),

@@ -61,46 +61,21 @@ class LoginPage extends StatelessWidget{
                                 key: formKey,
                                 child: Column(
                                   children: [
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                          right: 20.0,
-                                          left: 20.0
-                                      ),
-                                      child: Container(
-                                        height: 45.0,
-                                        decoration: BoxDecoration(
-                                            color: secondColor,
-                                            borderRadius: BorderRadius.circular(25.0)
-                                        ),
-                                        child: TextFormField(
-                                          controller: emailcontroller,
-                                          decoration:  const InputDecoration(
-                                              hintText: 'Email',
-                                              border: InputBorder.none,
-                                              prefixIcon:Icon(
-                                                Icons.email,
-                                                color: Colors.white,
-                                              ) ,
-                                              hintStyle: TextStyle(
-                                                  fontSize: 15,
-                                                  color: Colors.white
-
-                                              )
-
-                                          ) ,
-                                          keyboardType:TextInputType.emailAddress ,
-
-                                          validator: ( value)
+                                    textformfeild(
+                                        name: 'email',
+                                        icon: Icons.email,
+                                        edit: emailcontrollerre,
+                                        type: TextInputType.emailAddress,
+                                        function:(value)
+                                        {
                                           {
                                             if(value!.isEmpty)
                                             {
-                                              return 'Please enter user name';
+                                              return 'Please enter email';
                                             }
                                             return null;
-                                          },
-
-                                        ),
-                                      ),
+                                          }
+                                        }
                                     ),
                                     const SizedBox(height: 20.0),
                                     Padding(

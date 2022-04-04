@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../layout/widget/textfield.dart';
 import '../../models/symptoms/symptom.dart';
 import '../../shared/styles/colors.dart';
@@ -44,50 +43,42 @@ class _SymptomsScrrenState extends State<SymptomsScrren> {
         ],
 
       ),
-      body: SafeArea(
-        child: Container(
-          child: Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                Expanded(
-                  child: ListView.builder(
-                      itemCount: contacts.length,
-                      itemBuilder: (BuildContext context, int index) {
-                        // return item
-                        return ContactItem(
-                          contacts[index].name,
-                          contacts[index].isSelected,
-                          index,
-                        );
-                      }),
-                ),
-
-              ],
-            ),
+      body: Column(
+        children: [
+          Expanded(
+            child: ListView.builder(
+                itemCount: contacts.length,
+                itemBuilder: (BuildContext context, int index) {
+                  // return item
+                  return ContactItem(
+                    contacts[index].name,
+                    contacts[index].isSelected,
+                    index,
+                  );
+                }),
           ),
-        ),
+
+        ],
       ),
     );
   }
 
-  Widget ContactItem(
-      String name,  bool isSelected, int index) {
+  Widget ContactItem(String name,  bool isSelected, int index) {
     return CheckboxListTile(
         title: CustomText(title: '${name}',fontSize: 25,color: Colors.white),
         side: BorderSide(color: Colors.white),
-        checkColor: Colors.white,
-        activeColor: Colors.black,
+        checkColor: Colors.black,
+        activeColor: Colors.white,
         value: isSelected, onChanged: (value){
       setState(() {
         contacts[index].isSelected = !contacts[index].isSelected;
         if (contacts[index].isSelected == true) {
-          selectedContacts?.add(ContactModel(name,  true));
+         // selectedContacts?.add(ContactModel(name,  true));
         } else if (contacts[index].isSelected == false) {
-          selectedContacts
-              ?.removeWhere((element) => element.name == contacts[index].name);
+          selectedContacts?.removeWhere((element) => element.name == contacts[index].name);
         }
       });
+
     });
   }
 }

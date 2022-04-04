@@ -52,131 +52,55 @@ class RegisterScreen extends StatelessWidget {
                                 key: formKey2,
                                 child: Column(
                                   children: [
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                          right: 20.0,
-                                          left: 20.0
-                                      ),
-                                      child: Container(
-                                        height: 45.0,
-                                        decoration: BoxDecoration(
-                                            color: secondColor,
-                                            borderRadius: BorderRadius.circular(25.0)
-                                        ),
-                                        child: TextFormField(
-                                          textAlign: TextAlign.center,
-                                          controller: emailcontrollerre,
-                                          decoration:  const InputDecoration(
-                                              hintText: 'Email',
-                                              border: InputBorder.none,
-                                              suffixIcon:Icon(
-                                                Icons.email,
-                                                color: Colors.white,
-                                              ) ,
-                                              hintStyle: TextStyle(
-                                                  fontSize: 15,
-                                                  color: Colors.white
-
-                                              )
-
-                                          ) ,
-                                          keyboardType:TextInputType.emailAddress ,
-                                          validator: ( value)
+                                    textformfeild(
+                                      name: 'email',
+                                      icon: Icons.email,
+                                      edit: emailcontrollerre,
+                                      type: TextInputType.emailAddress,
+                                        function: (value){
                                           {
                                             if(value!.isEmpty)
                                             {
-                                              return 'Please enter Email';
+                                              return 'Please enter email';
                                             }
                                             return null;
-                                          },
-
-                                        ),
-                                      ),
+                                          }
+                                        },
                                     ),
                                     const SizedBox(height: 20.0),
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                          right: 20.0,
-                                          left: 20.0
-                                      ),
-                                      child: Container(
-                                        height: 45.0,
-                                        decoration: BoxDecoration(
-                                            color: secondColor,
-                                            borderRadius: BorderRadius.circular(25.0)
-                                        ),
-                                        child: TextFormField(
-                                          textAlign: TextAlign.center,
-                                          controller: namecontroller,
-                                          decoration:  const InputDecoration(
-                                              hintText: 'User Name',
-                                              border: InputBorder.none,
-                                              suffixIcon:Icon(
-                                                Icons.person,
-                                                color: Colors.white,
-                                              ) ,
-                                              hintStyle: TextStyle(
-                                                fontSize: 15,
-                                                color: Colors.white,
-
-
-                                              )
-
-                                          ) ,
-                                          keyboardType:TextInputType.name ,
-                                          validator: ( value)
+                                    textformfeild(
+                                        name: 'username',
+                                        icon: Icons.person,
+                                        edit: namecontroller,
+                                        type: TextInputType.name,
+                                        function:(value)
+                                        {
                                           {
                                             if(value!.isEmpty)
                                             {
                                               return 'Please enter username';
                                             }
                                             return null;
-                                          },
-
-                                        ),
-                                      ),
+                                          }
+                                        }
                                     ),
+
                                     const SizedBox(height: 20.0),
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                          right: 20.0,
-                                          left: 20.0
-                                      ),
-                                      child: Container(
-                                        height: 45.0,
-                                        decoration: BoxDecoration(
-                                            color: secondColor,
-                                            borderRadius: BorderRadius.circular(25.0)
-                                        ),
-                                        child: TextFormField(
-                                          textAlign: TextAlign.center,
-                                          controller: phonecontroller,
-                                          decoration:  const InputDecoration(
-                                              hintText: 'phone',
-                                              border: InputBorder.none,
-                                              suffixIcon:Icon(
-                                                Icons.phone,
-                                                color: Colors.white,
-                                              ) ,
-                                              hintStyle: TextStyle(
-                                                  fontSize: 15,
-                                                  color: Colors.white
-
-                                              )
-
-                                          ) ,
-                                          keyboardType:TextInputType.phone ,
-                                          validator: ( value)
+                                    textformfeild(
+                                        name: 'phone',
+                                        icon: Icons.phone,
+                                        edit: phonecontroller,
+                                        type: TextInputType.phone,
+                                        function:(value)
+                                        {
                                           {
                                             if(value!.isEmpty)
                                             {
                                               return 'Please enter phone';
                                             }
                                             return null;
-                                          },
-
-                                        ),
-                                      ),
+                                          }
+                                        }
                                     ),
                                     const SizedBox(height: 20.0),
                                     Padding(
@@ -191,28 +115,25 @@ class RegisterScreen extends StatelessWidget {
                                             borderRadius: BorderRadius.circular(25.0)
                                         ),
                                         child: TextFormField(
-                                          textAlign: TextAlign.center,
-                                          controller: passwordcontrollerre,
+                                          controller: passwordcontroller,
                                           obscureText: CubitRegister.get(context).ispassword,
                                           decoration:  InputDecoration(
                                               hintText: 'Password',
                                               border: InputBorder.none,
+                                              prefixIcon:const Icon(
+                                                Icons.lock,
+                                                color: Colors.white,
+                                              ) ,
                                               suffixIcon: IconButton(onPressed: (){
                                                 CubitRegister.get(context).changeiconspasswordre();
-                                              },
-                                                  icon:Icon(CubitRegister.get(context).suffix,color: Colors.white,)
-                                              ),
+                                              },icon:  Icon(CubitRegister.get(context).suffix,color: Colors.white,),),
                                               hintStyle: const TextStyle(
                                                 fontSize: 15,
                                                 color: Colors.white,
-
-
                                               )
 
                                           ) ,
                                           keyboardType:TextInputType.visiblePassword ,
-
-
                                           validator: ( value)
                                           {
                                             if(value!.isEmpty)
@@ -226,47 +147,23 @@ class RegisterScreen extends StatelessWidget {
                                       ),
                                     ),
                                     const SizedBox(height: 20.0),
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                          right: 20.0,
-                                          left: 20.0
-                                      ),
-                                      child: Container(
-                                        height: 45.0,
-                                        decoration: BoxDecoration(
-                                            color: secondColor,
-                                            borderRadius: BorderRadius.circular(25.0)
-                                        ),
-                                        child: TextFormField(
-                                          textAlign: TextAlign.center,
-                                          controller: gendercontroller,
-                                          decoration:  const InputDecoration(
-                                              hintText: 'Gender',
-                                              border: InputBorder.none,
-                                              suffixIcon:Icon(
-                                                Icons.transgender,
-                                                color: Colors.white,
-                                              ) ,
-                                              hintStyle: TextStyle(
-                                                  fontSize: 15,
-                                                  color: Colors.white
-
-                                              )
-
-                                          ) ,
-                                          keyboardType:TextInputType.name ,
-                                          validator: ( value)
+                                    textformfeild(
+                                        name: 'gender',
+                                        icon: Icons.transgender_outlined,
+                                        edit: gendercontroller,
+                                        type: TextInputType.name,
+                                        function:(value)
+                                        {
                                           {
                                             if(value!.isEmpty)
                                             {
                                               return 'Please enter gender';
                                             }
                                             return null;
-                                          },
-
-                                        ),
-                                      ),
+                                          }
+                                        }
                                     ),
+
                                     const SizedBox(height: 20.0),
                                     ConditionalBuilder(
                                       condition: state is !CuraRegisterLoadingState,
@@ -312,10 +209,6 @@ class RegisterScreen extends StatelessWidget {
                                       ),
                                       fallback: (context)=>const Center(child: CircularProgressIndicator()),
                                     ),
-
-
-
-
                                   ],
                                 )
                             ),

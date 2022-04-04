@@ -2,7 +2,10 @@
     package="com.example.graduationproject">
    <application
         android:label="graduationproject"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"
+       >
+       <meta-data android:name="com.google.android.geo.API_KEY"
+           android:value="AIzaSyD1ZU6EJWRICN2xQbMVmvMCi5G3V2u1F-E"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

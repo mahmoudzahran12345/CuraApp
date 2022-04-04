@@ -53,35 +53,48 @@ Widget textformfeild({
   required IconData icon,
   required TextEditingController edit,
   IconData? iconData,
-  required Function function
+  required TextInputType type,
+  required Function function,
 
-})=> Container(
-  decoration: BoxDecoration(
-    color: Colors.white,
-    borderRadius: BorderRadius.circular(22),
+})=>   Padding(
+  padding: const EdgeInsets.only(
+      right: 20.0,
+      left: 20.0
   ),
-  child: TextFormField(
-    decoration:   InputDecoration(
-        hintText: name,
-        border:OutlineInputBorder(
-          borderRadius: BorderRadius.circular(22),
-        ) ,
-        prefixIcon:  Icon(icon,color: firstColor,),
-        suffixIcon: Icon(iconData,color: firstColor),
-        hintStyle:   TextStyle(
-          fontSize: 20.0,
-          color: firstColor,
-          fontWeight: FontWeight.bold,
-        )
+  child: Container(
+    height: 45.0,
+    decoration: BoxDecoration(
+        color: secondColor,
+        borderRadius: BorderRadius.circular(25.0)
     ),
-    keyboardType:TextInputType.emailAddress ,
-    controller: edit,
+    child: TextFormField(
+
+      controller: edit,
+      decoration:   InputDecoration(
+          hintText: name,
+          border: InputBorder.none,
+          suffixIcon:Icon(
+            icon,
+            color: Colors.white,
+          ) ,
+          prefixIcon: Icon(iconData),
+          hintStyle: TextStyle(
+              fontSize: 15,
+              color: Colors.white
+
+          )
+
+      ) ,
+      validator: (value){
+        return function(value);
+      },
+      keyboardType:type,
 
 
-
-
+    ),
   ),
 );
+
 void showtoast({required String text , required ToastState state})=> Fluttertoast.showToast(
     msg: text,
     toastLength: Toast.LENGTH_SHORT,
@@ -225,3 +238,4 @@ void showDialog2(BuildContext context,String title) {
     ),
   );
 }
+

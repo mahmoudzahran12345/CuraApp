@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:graduationproject/modules/symptoms/symptomssccren.dart';
+import 'package:graduationproject/shared/components/component.dart';
 
 import '../../layout/widget/textfield.dart';
 import '../../shared/styles/colors.dart';
@@ -23,9 +25,14 @@ class FemaleScreenRotate extends StatelessWidget {
                  color: Colors.black54,
                   width: double.infinity,
                   height: 490,
-                  child: const Image(
-                    color: Colors.white,
-                    image: AssetImage('assets/Images/fim2.png'),
+                  child: InkWell(
+                    onTap: (){
+                      navigatto(context, SymptomsScrren());
+                    },
+                    child: const Image(
+                      color: Colors.white,
+                      image: AssetImage('assets/Images/fim2.png'),
+                    ),
                   ),
 
                 ),

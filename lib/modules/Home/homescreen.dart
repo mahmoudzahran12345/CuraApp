@@ -9,6 +9,7 @@ import 'package:graduationproject/shared/components/component.dart';
 import 'package:graduationproject/shared/styles/colors.dart';
 import 'package:lottie/lottie.dart';
 import '../../layout/webview/webviewscreen.dart';
+import '../location/locationscreen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -581,7 +582,7 @@ backgroundColor: Colors.white,
                   child: ItemDrawer(title: 'AboutApp',iconData: Icons.supervisor_account_outlined,)),
               InkWell(
                   onTap: (){
-                    Navigator.pop(context);
+                   navigatto(context, const LocationScreen());
 
                   },
                   child: ItemDrawer(title: 'Location'
@@ -592,7 +593,6 @@ backgroundColor: Colors.white,
                     navigatto(context, AboutApp());
                   },
                   child: ItemDrawer(title: 'LogOut',iconData: Icons.logout,)),
-
               Image(
                 color: secondColor,
 
@@ -600,7 +600,6 @@ backgroundColor: Colors.white,
 
 
                   )),
-
             ],
           ),
         ),
