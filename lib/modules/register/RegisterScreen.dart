@@ -115,7 +115,7 @@ class RegisterScreen extends StatelessWidget {
                                             borderRadius: BorderRadius.circular(25.0)
                                         ),
                                         child: TextFormField(
-                                          controller: passwordcontroller,
+                                          controller: passwordcontrollerre,
                                           obscureText: CubitRegister.get(context).ispassword,
                                           decoration:  InputDecoration(
                                               hintText: 'Password',

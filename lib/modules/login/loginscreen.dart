@@ -64,7 +64,7 @@ class LoginPage extends StatelessWidget{
                                     textformfeild(
                                         name: 'email',
                                         icon: Icons.email,
-                                        edit: emailcontrollerre,
+                                        edit: emailcontroller,
                                         type: TextInputType.emailAddress,
                                         function:(value)
                                         {
