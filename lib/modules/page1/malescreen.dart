@@ -1,25 +1,16 @@
-import 'package:flip_card/flip_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:graduationproject/modules/Home/homescreen.dart';
 import 'package:graduationproject/modules/page1/malescreen2.dart';
-import 'package:graduationproject/shared/cubit/curaappcubit/curaapp.dart';
-import 'package:graduationproject/shared/cubit/curaappcubit/curaappstate.dart';
 import 'package:graduationproject/shared/styles/colors.dart';
-
 import '../../layout/widget/textfield.dart';
 import '../../shared/components/component.dart';
-import '../symptoms/symptomssccren.dart';
-
 class MaleScreen extends StatelessWidget {
   const MaleScreen({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
         backgroundColor: secondColor,
-
         body: Padding(
           padding:  const EdgeInsets.all( 20.0),
           child: Center(
@@ -32,10 +23,163 @@ class MaleScreen extends StatelessWidget {
                   color: Colors.black54,
                   width: double.infinity,
                   height: 490,
-                  child: InkWell(
-                    onTap: (){navigatto(context, SymptomsScrren());},
-                    child: const Image(
-                      image: AssetImage('assets/Images/file5.png'),
+                  child:  Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        InkWell(
+                          child: const Image(
+                            image: AssetImage('assets/Images/hed.png'),
+                          ),
+                          onTap: (){
+                          },
+                        ),
+                        Row(
+                         mainAxisAlignment: MainAxisAlignment.center,
+                         children:  [
+                           InkWell(
+                             child: const Image(
+                               image: AssetImage('assets/Images/hand1.png'),
+                             ),
+                             onTap: (){},
+                           ),
+                           InkWell(
+                             child: const Image(
+                               image: AssetImage('assets/Images/heart1.png'),
+                             ),
+                             onTap: (){},
+                           ),
+                           InkWell(
+                             child: const Image(
+                               image: AssetImage('assets/Images/heart2.png'),
+                             ),
+                             onTap: (){},
+                           ),
+                           InkWell(
+                             child: const Image(
+                               image: AssetImage('assets/Images/hand2.png'),
+                             ),
+                             onTap: (){},
+                           ),
+
+
+
+                         ],
+                       ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+
+                          children:  [
+                            InkWell(
+                              child: const Image(
+                                image: AssetImage('assets/Images/hand3.png'),
+                              ),
+                              onTap: (){},
+                            ),
+                            InkWell(
+                              onTap: (){},
+                              child: const Image(
+                                image: AssetImage('assets/Images/Belly1.png'),
+
+                              ),
+                            ),
+                            InkWell(
+                              child: const Image(
+                                image: AssetImage('assets/Images/Belly2.png'),
+
+                              ),
+                              onTap: (){},
+                            ),
+                            InkWell(
+                              child: const Image(
+                                image: AssetImage('assets/Images/hand4.png'),
+                              ),
+                              onTap: (){},
+                            ),
+
+                          ],
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+
+                          children:  [
+                            InkWell(
+                              child: const Image(
+                                image: AssetImage('assets/Images/hand5.png'),
+
+                              ),
+                              onTap: (){},
+                            ),
+                            InkWell(
+                              child: const Image(
+                                image: AssetImage('assets/Images/leg1.png'),
+
+                              ),
+                              onTap: (){},
+                            ),
+                            InkWell(
+                              child: const Image(
+                                image: AssetImage('assets/Images/leg2.png'),
+                              ),
+                              onTap: (){},
+                            ),
+                            InkWell(
+                              child: const Image(
+                                image: AssetImage('assets/Images/hand6.png'),
+                              ),
+                              onTap: (){},
+                            ),
+
+
+
+                          ],
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+
+                          children:  [
+
+                            InkWell(
+                              child: const Image(
+                                image: AssetImage('assets/Images/leg3.png'),
+
+                              ),
+                              onTap: (){},
+                            ),
+                            InkWell(
+                              child: const Image(
+                                image: AssetImage('assets/Images/leg4.png'),
+
+                              ),
+                              onTap: (){},
+                            ),
+
+
+                          ],
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+
+                          children:  [
+
+                            InkWell(
+                              child: const Image(
+                                image: AssetImage('assets/Images/leg5.png'),
+
+                              ),
+                              onTap: (){},
+                            ),
+                            InkWell(
+                              child: const Image(
+                                image: AssetImage('assets/Images/leg6.png'),
+
+                              ),
+                              onTap: (){},
+                            ),
+
+                          ],
+                        ),
+                      ],
                     ),
                   ),
                 ),

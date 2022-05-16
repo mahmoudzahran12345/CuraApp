@@ -26,7 +26,6 @@ class LoginPage extends StatelessWidget{
           }
           else if(state is SignGoggleErrorState){
             showDialog2(context,"Email is not correct");
-
           }
           else if(state is CuraLoginSuccessfulState){
             navigatto(context, const PageScreen1());
@@ -153,8 +152,8 @@ class LoginPage extends StatelessWidget{
                                                 CuraLoginCubit.get(context).userLogin(
                                                     email: emailcontroller.text,
                                                     password: passwordcontroller.text);
-                                                emailcontroller.clear();
-                                                passwordcontroller.clear();
+                                                    emailcontroller.clear();
+                                                    passwordcontroller.clear();
 
 
                                               }

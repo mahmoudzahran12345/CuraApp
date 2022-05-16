@@ -328,6 +328,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.0"
+  flutter_shapes:
+    dependency: "direct main"
+    description:
+      name: flutter_shapes
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.3.0"
   flutter_signin_button:
     dependency: transitive
     description:

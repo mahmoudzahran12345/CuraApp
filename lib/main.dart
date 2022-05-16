@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:graduationproject/modules/splash_home/splashscreen.dart';
 import 'package:graduationproject/shared/cubit/login/blocobserver.dart';
+import 'modules/page1/famelescreen.dart';
+import 'modules/page1/malescreen.dart';
 import 'modules/register/RegisterScreen.dart';
 
 void main()async {
