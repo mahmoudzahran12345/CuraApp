@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:graduationproject/modules/page1/famelescrren2.dart';
-import 'package:graduationproject/modules/symptoms/symptomssccren.dart';
 
 import '../../layout/widget/textfield.dart';
 import '../../shared/components/component.dart';

@@ -62,8 +62,6 @@ class MaleScreen extends StatelessWidget {
                              onTap: (){},
                            ),
 
-
-
                          ],
                        ),
                         Row(

@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:graduationproject/modules/symptoms/symptomssccren.dart';
 
 import '../../layout/widget/textfield.dart';
 import '../../shared/components/component.dart';

@@ -7,6 +7,7 @@ import 'package:graduationproject/shared/cubit/login/blocobserver.dart';
 import 'modules/page1/famelescreen.dart';
 import 'modules/page1/malescreen.dart';
 import 'modules/register/RegisterScreen.dart';
+import 'modules/symptoms/desiase.dart';
 
 void main()async {
   Bloc.observer = MyBlocObserver();
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
             )
         ),
       ),
-      home:    const SplashScreen(),
+      home:     const Diseases(),
     );
   }
 }
