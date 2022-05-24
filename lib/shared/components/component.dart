@@ -2,9 +2,12 @@ import 'package:flip_card/flip_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 import 'package:graduationproject/shared/styles/colors.dart';
 
 
+import '../../layout/webview/webviewscreen3.dart';
 import 'constant.dart';
 
 void navigatto(context,widget)=>Navigator.push(context,
@@ -239,3 +242,45 @@ void showDialog2(BuildContext context,String title) {
   );
 }
 
+void showDialog78(BuildContext context,String title) {
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        backgroundColor: secondColor,
+        title:  const Text("Alert!!",style: TextStyle(color: Colors.white),),
+        content:   Text(title,style: const TextStyle(color: Colors.white)),
+        actions: <Widget>[
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              FlatButton(
+                child:  const Text("OK",style: TextStyle(color: Colors.white)),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+              ),
+              const Spacer(),
+               InkWell(
+                child: const Image(
+                  image: AssetImage('assets/Images/maps.png'),
+                  height: 40,
+                  width: 40,
+                  color: Colors.white,
+                ),
+                onTap: (){
+                  openMap(30.0444, 31.2357 );
+                },
+              ),
+            ],
+          )
+        ],
+      );
+    },
+  );
+}
+
+Future<dynamic> openMap(double latitude, double longitude) async {
+  String googleUrl = 'https://www.google.com/maps/search/?api=1&query=$latitude,$longitude';
+  launch(googleUrl);
+  }

@@ -1,172 +1,227 @@
 [
   {
-    "name":"Acne   حب الشباب",
-    "symptom1":"skin rash   الطفح الجلدي",
-    "symptom2":"pus_filled_pimples   البثور المليئة بالصديد ",
-    "symptom3":"blackheads  الرؤوس السوداء",
-    "symptom4":"scarring  تندب ",
+    "name":"Acne حب الشباب",
+    "symptom1":"skin rash الطفح الجلدي",
+    "symptom2":"pus_filled_pimples البثور المليئة بالصديد",
+    "symptom3":"blackheads الرؤوس السوداء",
+    "symptom4":"scarring تندب",
     "symptom5":"",
-    "id":1
-  },
-
-
-  {
-    "name":"AIDS  أيدز",
-    "symptom1":"muscle wasting  هزال العضلات",
-    "symptom2":"patches_in_throat  بقع في الحلق",
-    "symptom3":"high fever  ارتفاع في درجة الحرارة",
-    "symptom4":"extra_marital_contacts  تصالات خارج الزوجية",
-    "symptom5":"",
-
+    "medicine1":"bath twice",
+    "medicine2":"avoid fatty spicy food",
+    "medicine3":"avoid too many products",
+    "medicine4":"consult doctor",
     "id":2
   },
 
   {
-    "name":"Alcoholic hepatitis  التهاب الكبد الكوليكي",
-    "symptom1":"vomiting  التقيؤ",
-    "symptom2":"yellowish skin  جلد مصفر",
-    "symptom3":"abdominal pain  وجع بطن",
-    "symptom4":"swelling_of_stomach  تورم في المعدة",
-    "symptom5":"distention_of_abdomen  انتفاخ البطن",
+    "name":"AIDS أيدز مرض",
+    "symptom1":"muscle wasting هزال العضلات",
+    "symptom2":"patches_in_throat بقع في الحلق",
+    "symptom3":"high fever ارتفاع في درجة الحرارة",
+    "symptom4":"extra_marital_contacts اتصالات خارج الزوجية",
+    "symptom5":"",
+    "medicine1":"avoid open cuts",
+    "medicine2":"wear ppe if possible",
+    "medicine3":"consult doctor",
+    "medicine4":"",
     "id":3
   },
-
   {
-    "name":"Allergy  حساسية",
-    "symptom1":"continuous sneezing  العطس المستمر",
-    "symptom2":"shivering  يرتجف",
-    "symptom3":"chills  قشعريرة",
-    "symptom4":"watering_from_eyes  سقي من العيون",
-    "symptom5":"",
-
-    "id":4
-  },
-
-  {
-    "name":"Arthritis  التهاب المفاصل",
-    "symptom1":"muscle weakness ضعف العضلات",
-    "symptom2":"stiff neck  تصلب الرقبة",
-    "symptom3": "swelling joints  تورم المفاصل",
-    "symptom4":"movement stiffness  تصلب الحركة",
-    "symptom5":"painful walking  المشي المؤلم",
+    "name":"Alcohlic hepatitis التهاب الكبد الكوليكي",
+    "symptom1":"vomiting التقيؤ",
+    "symptom2":"yellowish skin جلد مصفر",
+    "symptom3":"abdominal pain وجع بطن",
+    "symptom4":"swelling_of_stomach تورم في المعدة",
+    "symptom5":"distention_of_abdomen انتفاخ البطن",
+    "medicine1":"stop alcohol consumption",
+    "medicine2":"medication",
+    "medicine3":"consult doctor",
+    "medicine4":"",
     "id":5
   },
 
   {
-    "name":"Bronchial Asthma  الربو القصبي",
-    "symptom1":"fatigue  إعياء",
-    "symptom2":"cough  سعال",
-    "symptom3":"breathlessness  ضيق التنفس",
-    "symptom4":"high fever  ضيق التنفس",
-    "symptom5":"family history  مرض وراثه",
-    "id":6
+    "name":"Allergy حساسية",
+    "symptom1":"continuous sneezing العطس المستمر",
+    "symptom2":"shivering يرتجف",
+    "symptom3":"chills قشعريرة",
+    "symptom4":"watering_from_eyes سقي من العيون",
+    "symptom5":"",
+    "medicine1":"apply calamine",
+    "medicine2":"cover area with bandage",
+    "medicine3":"use ice to compress itching",
+    "medicine4":"stay away from allergy cause",
+    "id":3
+  },
+  {
+    "name":"Arthritis التهاب المفاصل",
+    "symptom1":"muscle weakness ضعف العضلات",
+    "symptom2":"stiff neck تصلب الرقبة",
+    "symptom3": "swelling joints تورم المفاصل",
+    "symptom4":"movement stiffness تصلب الحركة",
+    "symptom5":"painful walking المشي المؤلم",
+    "medicine1":"try acupuncture",
+    "medicine2":"massage",
+    "medicine3":"use hot and cold therapy",
+    "medicine4":"exercise",
+    "id":4
+  },
+  {
+    "name":"Bronchial Asthma الربو القصبي",
+    "symptom1":"fatigue إعياء",
+    "symptom2":"cough سعال",
+    "symptom3":"breathlessness ضيق التنفس",
+    "symptom4":"high fever ارتفاع في درجة الحرارة",
+    "symptom5":"family history تاريخ العائلة",
+    "medicine1":"switch to loose clothing",
+    "medicine2":"take deep breaths",
+    "medicine3":"get away from trigger",
+    "medicine4":"seek help",
+    "id":3
   },
   {
     "name":"Cervical spondylosis سرطان عنق الرحم",
-    "symptom1":"back pain  ألم في الظهر",
+    "symptom1":"back pain ألم في الظهر",
     "symptom2":"weakness_in_limbs ضعف في الأطراف",
-    "symptom3":"neck pain  الم الرقبة",
-    "symptom4":"dizziness  دوخة",
-    "symptom5":"loss_of_balance  فقدان التوازن",
-    "id":7
-  },
-
-  {
-    "name":"Chicken pox  جدري",
-    "symptom1":"itching  الحكه",
-    "symptom2":"skin rash  الطفح الجلدي",
-    "symptom3":"fatigue  اعياء",
-    "symptom4":"headache  صداع الراس",
-    "symptom5":"high fever  ارتفاع في درجة الحرارة",
-    "id":8
-  },
-
-  {
-    "name":"Chronic homeostasis  ركود صفراوي مزمن",
-    "symptom1":"itching  الحكه",
-    "symptom2":"vomiting  التقيؤ",
-    "symptom3":"yellowish skin  جلد مصفر",
-    "symptom4":"loss_of_appetite  فقدان الشهية",
-    "symptom5":"nausea  غثيان",
+    "symptom3":"neck pain الم الرقبة",
+    "symptom4":"dizziness دوخة",
+    "symptom5":"loss_of_balance فقدان التوازن",
+    "medicine1":"use heating pad or cold pack",
+    "medicine2":"take otc pain reliver",
+    "medicine3":"consult doctor",
+    "medicine4":"",
     "id":9
   },
   {
-    "name":"Common cold  زُكام",
-    "symptom1":"continuous sneezing  العطس المستمر",
-    "symptom2":"fatigue  إعياء",
-    "symptom3":"cough  سعال",
-    "symptom4":"headache  صداع الراس",
-    "symptom5":"chest pain  ألم صدر",
-    "id":10
+    "name":"Chicken pox جدري",
+    "symptom1":"itching الحكه",
+    "symptom2":"skin rash الطفح الجلدي",
+    "symptom3":"fatigue إعياء",
+    "symptom4":"headache صداع الراس",
+    "symptom5":"high fever ارتفاع في درجة الحرارة",
+    "medicine1":"use neem in bathing ",
+    "medicine2":"consume neem leaves",
+    "medicine3":"take vaccine",
+    "medicine4":"avoid public places",
+    "id":3
+  },
+  {
+    "name":"Chronic cholestasis ركود صفراوي مزمن",
+    "symptom1":"itching الحكه",
+    "symptom2":"vomiting التقيؤ",
+    "symptom3":"yellowish skin جلد مصفر",
+    "symptom4":"loss_of_appetite فقدان الشهية",
+    "symptom5":"nausea غثيان",
+    "medicine1":"cold baths ",
+    "medicine2":"anti itch medicine",
+    "medicine3":"eat healthy",
+    "medicine4":"consult doctor",
+    "id":5
+  },
+  {
+    "name":"Common cold زُكام",
+    "symptom1":"continuous sneezing العطس المستمر",
+    "symptom2":"fatigue إعياء",
+    "symptom3":"cough سعال",
+    "symptom4":"headache صداع الراس",
+    "symptom5":"chest pain ألم صدر",
+    "medicine1":"drink vitamin c rich drinks",
+    "medicine2":"take vapor",
+    "medicine3":"avoid cold food",
+    "medicine4":"keep fever in check",
+    "id":2
+  },
+  {
+    "name":"Dengue حمى الضنك",
+    "symptom1":"skin rash الطفح الجلدي",
+    "symptom2":"vomiting التقيؤ",
+    "symptom3":"fatigue إعياء",
+    "symptom4":"headache صداع الراس",
+    "symptom5": "back pain ألم في الظهر",
+    "medicine1":"drink papaya leaf juice",
+    "medicine2":"avoid fatty spicy food",
+    "medicine3":"keep mosquitos away",
+    "medicine4":"keep hydrated",
+    "id":7
+  },
+  {
+    "name":"Diabetes داء السكري",
+    "symptom1":"fatigue إعياء",
+    "symptom2":"weight loss فقدان الوزن",
+    "symptom3":"restlessness الأرق",
+    "symptom4":"lethargy الخمول",
+    "symptom5":"blurred_and_distored_vision رؤية مشوشة",
+    "medicine1":"have balanced diet",
+    "medicine2":"exercise",
+    "medicine3":"consult doctor",
+    "medicine4":"",
+    "id":2
   },
 
   {
-    "name":"Dengue  حمى الضنك",
-    "symptom1":"skin rash  الطفح الجلدي",
-    "symptom2":"vomiting  التقيؤ",
-    "symptom3":"fatigue  إعياء",
-    "symptom4":"headache  صداع الراس",
-    "symptom5": "back pain  ألم في الظهر",
-    "id":11
-  },
-
-  {
-    "name":"Diabetes  السكر",
-    "symptom1":"fatigue  إعياء",
-    "symptom2":"weight loss  فقدان الوزن",
-    "symptom3":"restlessness  الأرق",
-    "symptom4":"lethargy  الخمول",
-    "symptom5":"blurred_and_distorted_vision  رؤية مشوشة",
-    "id":12
-  },
-
-  {
-    "name":"Dimorphic hemorrhoids(piles)  البواسير ثنائية الشكل (أكوام)",
-    "symptom1":"constipation  إمساك",
-    "symptom2":"pain_during_bowel_movements  ألم أثناء حركات الأمعاء",
-    "symptom3":"pain_in_anal_region  ألم في منطقة الشرج",
-    "symptom4":"bloody stool  براز مدمي",
-    "symptom5":"irritation_in_anus  تهيج في الشرج",
-    "id":13
-  },
-
-  {
-    "name":"Drug Reaction  تفاعل الدواء",
-    "symptom1":"itching  حكه",
-    "symptom2":"skin rash  لطفح الجلدي",
-    "symptom3":"stomach pain  آلام في المعدة",
-    "symptom4":"burning maturation  حرق التبول",
-    "symptom5":"spotting_urination  كتشاف التبول",
-    "id":14
-  },
-
-  {
-    "name":"Fungal infection  تلوث فطري",
-    "symptom1":"itching  حكه",
-    "symptom2":"skin rash  الطفح الجلدي",
-    "symptom3":"nodal_skin_eruptions  الطفح الجلدي العقدي",
-    "symptom4":"diachronic_patches  بقع خلل اللون",
-    "symptom5":"",
-    "id":15
+    "name":"Dimorphic hemorrhoids(piles) البواسير ثنائية الشكل (أكوام)",
+    "symptom1":"constipation إمساك",
+    "symptom2":"pain_during_bowel_movements ألم أثناء حركات الأمعاء",
+    "symptom3":"pain_in_anal_region ألم في منطقة الشرج",
+    "symptom4":"bloody stool براز مدمي",
+    "symptom5":"irritation_in_anus تهيج في الشرج",
+    "medicine1":"avoid fatty spicy food",
+    "medicine2":"consume witch hazel",
+    "medicine3":"warm bath with Epsom salt",
+    "medicine4":"consume alovera juice",
+    "id":9
   },
   {
-    "name":"Gastroenteritis  التهاب المعدة والأمعاء",
-    "symptom1":"vomiting  التقيؤ",
-    "symptom2":"sunken eyes  العيون الغارقة",
-    "symptom3":"dehydration  جفاف",
-    "symptom4":"diarrhea  إسهال",
-    "symptom5":"",
-    "id":16
+    "name":"Drug Reaction تفاعل الدواء",
+    "symptom1":"itching حكه",
+    "symptom2":"skin rash الطفح الجلدي",
+    "symptom3":"stomach pain آلام في المعدة",
+    "symptom4":"burning micturition حرق التبول",
+    "symptom5":"spotting_urination اكتشاف التبول",
+    "medicine1":"stop irritation",
+    "medicine2":"stop taking drug",
+    "medicine3":"consult nearest hospital",
+    "medicine4":"",
+    "id":5
   },
   {
-
+    "name":"Fungal infection تلوث فطري",
+    "symptom1":"itching حكه",
+    "symptom2":"skin rash الطفح الجلدي",
+    "symptom3":"nodal_skin_eruptions الطفح الجلدي العقدي",
+    "symptom4":"dischromic_patches بقع خلل اللون",
+    "symptom5":" ",
+    "medicine1":"bath twice",
+    "medicine2":"use Dettol or neem in bathing water",
+    "medicine3":"keep infected area dry",
+    "medicine4":"use clean cloths",
+    "id":3
+  },
+  {
+    "name":"Gastroenteritis التهاب المعدة والأمعاء",
+    "symptoms":"vomiting التقيؤ",
+    "symptom2":"sunken eyes العيون الغارقة",
+    "symptom3":"dehydration جفاف",
+    "symptom4":"diarrhea إسهال",
+    "symptom5":" ",
+    "medicine1":"stop eating solid food for while",
+    "medicine2":"try taking small sips of water",
+    "medicine3":"rest",
+    "medicine4":"ease back into eating",
+    "id":5
+  },
+  {
     "name":"GERD ارتجاع المريء",
     "symptom1":"stomach pain آلام في المعدة",
     "symptom2":"acidity حموضة",
     "symptom3":"vomiting التقيؤ",
     "symptom4":"cough سعال",
     "symptom5":"chest pain ألم صدر",
-    "id":17
+    "medicine1":"avoid fatty spicy food",
+    "medicine2":"avoid lying down after eating",
+    "medicine3":"maintain healthy weight",
+    "medicine4":"exercise",
+    "id":5
   },
   {
     "name":"Heart attack نوبة قلبية",
@@ -174,9 +229,12 @@
     "symptom2":"chest pain ألم صدر",
     "symptom3":"breathlessness ضيق التنفس",
     "symptom4":"sweating التعرق",
-    "symptom5":"",
-
-    "id":18
+    "symptom5":" ",
+    "medicine1":"call ambulance",
+    "medicine2":"chew or swallow aspirin",
+    "medicine3":"keep calm",
+    "medicine4":"",
+    "id":3
   },
   {
     "name":"Hepatitis A  التهاب الكبد A",
@@ -185,35 +243,43 @@
     "symptom3":"loss_off_appetite فقدان الشهية ",
     "symptom4":"nausea غثيان",
     "symptom5":"abdominal pain وجع بطن",
-    "id":19
+    "medicine1":"Consult nearest hospital",
+    "medicine2":"wash hands through",
+    "medicine3":"avoid fatty spicy food",
+    "medicine4":"medication",
+    "id":5
   },
 
-
   {
-
     "name":"Hepatitis B التهاب الكبد ب",
     "symptom1":"itching حكه",
     "symptom2":"fatigue إعياء",
     "symptom3":"yellowish skin جلد مصفر",
     "symptom4":"loss_of_appetite فقدان الشهية",
     "symptom5":"lethargy الخمول",
+    "medicine1":"Consult nearest hospital",
+    "medicine2":"vaccination",
+    "medicine3":"eat healthy",
+    "medicine4":"medication",
 
-    "id":20
+    "id":5
 
   },
 
-
   {
     "name":"Hepatitis C التهاب الكبد ج",
+
     "symptom1":"fatigue إعياء",
     "symptom2":"yellowish skin جلد مصفر",
     "symptom3":"loss_of_appetite فقدان الشهية",
     "symptom4":"nausea غثيان",
-    "symptom5":"family history مرض وراثه",
-    "id":21
-
+    "symptom5":"family history تاريخ العائلة",
+    "medicine1":"Consult nearest hospital",
+    "medicine2":"vaccination",
+    "medicine3":"eat healthy",
+    "medicine4":"medication",
+    "id":5
   },
-
   {
     "name":"Hepatitis D التهاب الكبد د",
     "symptom1":"yellowish skin جلد مصفر",
@@ -221,11 +287,13 @@
     "symptom3":"loss_of_appetite فقدان الشهية",
     "symptom4":"nausea غثيان",
     "symptom5":"fatigue إعياء",
-    "id":22
+    "medicine1":"consult doctor",
+    "medicine2":"medication",
+    "medicine3":"eat healthy",
+    "medicine4":"",
+    "id":5
 
   },
-
-
   {
     "name":"Hepatitis E التهاب الكبد E",
     "symptom1":"yellowish skin جلد مصفر",
@@ -233,11 +301,12 @@
     "symptom3":"joint pain الم المفاصل",
     "symptom4":"high fever ارتفاع في درجة الحرارة",
     "symptom5":"fatigue إعياء",
-    "id":23
-
+    "medicine1":"stop alcohol consumption",
+    "medicine2":"rest",
+    "medicine3":"consult doctor",
+    "medicine4":"medication",
+    "id":5
   },
-
-
   {
     "name":"Hypertension ارتفاع ضغط الدم",
     "symptom1":" headache صداع الراس",
@@ -245,11 +314,13 @@
     "symptom3":"dizziness دوخة",
     "symptom4":"loss_of_balance فقدان التوازن",
     "symptom5":"lack_of_concentration نقص التركيز",
-    "id":24
+    "medicine1":"meditation",
+    "medicine2":"salt baths",
+    "medicine3":"reduce stress",
+    "medicine4":"get proper sleep",
+    "id":2
 
   },
-
-
   {
     "name":"Hypoglycemia نقص سكر الدم",
     "symptom1":"vomiting التقيؤ",
@@ -257,11 +328,12 @@
     "symptom3":"headache صداع الراس",
     "symptom4":"nausea غثيان",
     "symptom5":"sweating التعرق",
-    "id":25
-
+    "medicine1":"lie down on side",
+    "medicine2":"check in pulse",
+    "medicine3":"drink sugary drinks",
+    "medicine4":"consult doctor",
+    "id":2
   },
-
-
   {
     "name":"Hypothyroidism قصور الغدة الدرقية",
     "symptom1":"fatigue إعياء",
@@ -269,12 +341,12 @@
     "symptom3":"mood swings تقلب المزاج",
     "symptom4":"dizziness دوخة",
     "symptom5":"lethargy الخمول",
-    "id":26
-
+    "medicine1":"reduce stress",
+    "medicine2":"exercise",
+    "medicine3":"eat healthy",
+    "medicine4":"get proper sleep",
+    "id":2
   },
-
-
-
   {
     "name":"Impetigo الحصف داء جلدي يصيب الأطفال",
     "symptom1":"skin rash الطفح الجلدي",
@@ -282,52 +354,53 @@
     "symptom3":"blister بثرة",
     "symptom4":"red_sore_around_nose قرحة حمراء حول الأنف",
     "symptom5":"yellow_crust_ooze ناز القشرة الصفراء",
-    "id":27
+    "medicine1":"soak affected area in warm water",
+    "medicine2":"use antibiotics",
+    "medicine3":"remove scabs with wet compressed cloth",
+    "medicine4":"consult doctor",
+    "id":2
 
   },
 
-
   {
     "name":"Jaundice اليرقان",
-
     "symptom1":"itching حكه",
     "symptom2":"vomiting التقيؤ",
     "symptom3":"fatigue إعياء",
     "symptom4":"weight loss فقدان الوزن",
     "symptom5":"yellowish skin جلد مصفر",
-
-    "id":28
-
+    "medicine1":"drink plenty of water",
+    "medicine2":"consume milk thistle",
+    "medicine3":"eat fruits and high fibrous food",
+    "medicine4":"medication",
+    "id":2
   },
-
-
   {
     "name":"Malaria ملاريا",
-
     "symptom1":"vomiting التقيؤ",
     "symptom2":"headache صداع الراس",
     "symptom3":"chills قشعريرة",
     "symptom4":"high fever ارتفاع في درجة الحرارة",
     "symptom5":"nausea غثيان",
-    "id":29
-
+    "medicine1":"Consult nearest hospital",
+    "medicine2":"avoid oily food",
+    "medicine3":"avoid non veg food",
+    "medicine4":"keep mosquitos out",
+    "id":5
   },
-
-
   {
     "name":"Migraine صداع نصفي",
-
     "symptom1":"acidity حموضة",
     "symptom2":"indigestion عسر الهضم",
     "symptom3":"headache صداع الراس",
     "symptom4":"stiff neck تصلب الرقبة",
     "symptom5":"blurred_and_distorted_vision رؤية ضبابية ومشوهة",
-
-    "id":30
-
+    "medicine1":"meditation",
+    "medicine2":"reduce stress",
+    "medicine3":"use polaroid glasses in sun",
+    "medicine4":"consult doctor",
+    "id":2
   },
-
-
   {
     "name":"Osteoarthritis في العمود الفقري",
     "symptom1":"joint pain الم المفاصل",
@@ -335,24 +408,25 @@
     "symptom3":"knee pain ألم الركبة",
     "symptom4":"swelling joints تورم المفاصل",
     "symptom5":"hip_joint_pain آلام الورك",
-    "id":31
-
+    "medicine1":"acetaminophen",
+    "medicine2":"consult nearest hospital",
+    "medicine3":"follow up",
+    "medicine4":"salt baths",
+    "id":7
   },
-
-
   {
     "name":"Paralysis (brain hemorrhage) الشلل (نزيف في المخ)",
-
     "symptom1":"vomiting التقيؤ",
     "symptom2":"headache صداع الراس",
     "symptom3":"weakness_of_one_body_side ضعف جانب واحد من الجسم",
-    "symptom4":"altered sensor تغيير الحسية",
-    "symptom5":"kana pain  الم الركبه",
-    "id":32
-
+    "symptom4":"altered sensorium تغيير الحسية",
+    "symptom5":" ",
+    "medicine1":"massage",
+    "medicine2":"eat healthy",
+    "medicine3":"exercise",
+    "medicine4":"consult doctor",
+    "id":2
   },
-
-
   {
     "name":"Peptic ulcer disease مرض القرحة الهضمية",
     "symptom1":"vomiting التقيؤ",
@@ -360,11 +434,13 @@
     "symptom3":"loss_of_appetite فقدان الشهية",
     "symptom4":"abdominal pain وجع بطن",
     "symptom5":"passage_of_gases مرور الغازات",
-    "id":33
+    "medicine1":"avoid fatty spicy food",
+    "medicine2":"consume probiotic food",
+    "medicine3":"eliminate milk",
+    "medicine4":"limit alcohol",
+    "id":5
 
   },
-
-
   {
     "name":"Pneumonia التهاب رئوي",
     "symptom1":"fatigue عياء",
@@ -372,11 +448,12 @@
     "symptom3":"chest pain ألم صدر",
     "symptom4":"chills قشعريرة",
     "symptom5":"breathlessness ضيق التنفس",
-    "id":34
-
+    "medicine1":"asprine",
+    "medicine2":"antibiotic",
+    "medicine3":"cough medicine",
+    "medicine4":"",
+    "id":3
   },
-
-
   {
     "name":"Psoriasis صدفية",
     "symptom1":"skin rash الطفح الجلدي",
@@ -384,25 +461,26 @@
     "symptom3":"skin peeling تقشير الجلد",
     "symptom4":"silver_like_dusting",
     "symptom5":"small_dents_in_nails خدوش صغيرة في الأظافر",
-    "id":35
-
+    "medicine1":"wash hands with warm soapy water",
+    "medicine2":"stop bleeding using pressure",
+    "medicine3":"salt baths",
+    "medicine4":"consult doctor",
+    "id":4
   },
-
 
   {
     "name":"Tuberculosis مرض الدرن",
-
     "symptom1":"vomiting التقيؤ",
     "symptom2":"fatigue إعياء",
     "symptom3":"weight loss فقدان الوزن",
     "symptom4":"cough سعال",
     "symptom5":"chest pain ألم صدر",
-
-    "id":36
-
+    "medicine1":"cover mouth",
+    "medicine2":"consult doctor",
+    "medicine3":"medication",
+    "medicine4":"rest",
+    "id":3
   },
-
-
   {
     "name":"Typhoid التيفوئيد",
     "symptom1":"vomiting التقيؤ",
@@ -410,36 +488,38 @@
     "symptom3":"headache صداع الراس",
     "symptom4":"chills قشعريرة",
     "symptom5":"constipation إمساك",
-    "id":37
-
+    "medicine1":"eat high calorie vegetables",
+    "medicine2":"consult doctor",
+    "medicine3":"antibiotic therapy",
+    "medicine4":"medication",
+    "id":2
   },
-
-
   {
     "name":"Urinary tract infection التهاب المسالك البولية",
-
-    "symptom1":"burning maturation حرق التبول",
+    "symptom1":"burning micturition حرق التبول",
     "symptom2":"bladder discomfort عدم الراحة في المثانة",
     "symptom3":"foul_smell_of urine رائحة كريهة من البول",
     "symptom4":"continuous_feel_of_urine شعور مستمر بالبول",
-    "symptom5":"",
-    "id":38
-
+    "symptom5":" ",
+    "medicine1":"drink plenty of water",
+    "medicine2":"increase vitamin c intake",
+    "medicine3":"drink cranberry juice",
+    "medicine4":"take probiotics",
+    "id":9
   },
-
-
   {
-   "name":"Varicose veins توسع الأوردة",
+    "name":"Varicose veins توسع الأوردة",
     "symptom1":"fatigue إعياء",
     "symptom2":"cramps تشنجات",
     "symptom3":"bruising كدمات",
     "symptom4":"obesity بدانة",
     "symptom5":"swollen legs تورم الساقين",
-    "id":39
-
+    "medicine1":"lie down flat and raise the leg high",
+    "medicine2":"use ointments",
+    "medicine3":"use vein compression",
+    "medicine4":"don't stand still for long",
+    "id":6
   },
-
-
   {
     "name":"vertigo Paroxysmal  Positional Vertigo دوار الوضعة الانتيابي",
     "symptom1":"vomiting التقيؤ",
@@ -447,7 +527,11 @@
     "symptom3":"loss_of_appetite فقدان الشهية",
     "symptom4":"nausea غثيان",
     "symptom5":"spinning movements حركات الغزل",
-    "id":40
+    "medicine1":"lie down",
+    "medicine2":"avoid sudden change in body",
+    "medicine3":"avoid abrupt head movement",
+    "medicine4":"relax",
+    "id":2
   },
   {
     "name":"Asthma الربو",
@@ -456,7 +540,11 @@
     "symptom3":" wheezing تنفس بصفير",
     "symptom4":"shortness of breath ضيق في التنفس",
     "symptom5":"fever حمة",
-    "id":41
+    "medicine1":"Omalizumab",
+    "medicine2":"Mepolizumab",
+    "medicine3":"itraconazole",
+    "medicine4":"inhaler",
+    "id":3
   },
   {
     "name":"Bronchiectasis توسع القصبات",
@@ -465,7 +553,11 @@
     "symptom3":" Fatigue إعياء",
     "symptom4":"fever حمة",
     "symptom5":"Chest pain ألم صدر",
-    "id":42
+    "medicine1":"antibiotics",
+    "medicine2":"hypertonic saline",
+    "medicine3":"Intrapulmonary Percussive Ventilation",
+    "medicine4":"inhaler",
+    "id":3
   },
   {
     "name":"Chronic Bronchitis التهاب الشعب الهوائية المزمن",
@@ -474,7 +566,11 @@
     "symptom3":"chest pain ألم صدر",
     "symptom4":"shortness of breath ضيق في التنفس",
     "symptom5":" ",
-    "id":43
+    "medicine1":"steroids to reduce inflammation",
+    "medicine2":"oxygen",
+    "medicine3":"x-ray",
+    "medicine4":"inhaler",
+    "id":3
   },
   {
     "name":"chronic obstructive pulmonary chronic obstructive pulmonary الانسداد الرئوي المزمن",
@@ -483,7 +579,11 @@
     "symptom3":"mucus مخاط",
     "symptom4":"Wheezing تنفس بصفير",
     "symptom5":"cold البرد",
-    "id":44
+    "medicine1":"Pulmonary rehabilitation",
+    "medicine2":"oxygen",
+    "medicine3":"consult a doctor",
+    "medicine4":"",
+    "id":3
   },
   {
     "name":"Monotheism ورم الظهارة المتوسطة",
@@ -491,18 +591,25 @@
     "symptom2":"chest pain ألم صدر",
     "symptom3":"lower back pain آلام أسفل الظهر",
     "symptom4":"dry cough سعال جاف",
-    "symptom5":"",
-    "id":45
+    "symptom5":" ",
+    "medicine1":"consult a doctor",
+    "medicine2":"Chemotherapy",
+    "medicine3":"",
+    "medicine4":"",
+    "id":3
   },
   {
-
     "name":"Pneumothorax استرواح الصدر",
     "symptom1":"sharp chest pain ألم حاد في الصدر",
     "symptom2":"shortness of breath ضيق في التنفس",
     "symptom3":"Bluish skin جلد مزرق",
     "symptom4":"Rapid breathing تنفس سريع",
     "symptom5":"dry cough سعال جاف",
-    "id":46
+    "medicine1":"isotonic sodium chloride solution",
+    "medicine2":"Chemotherapy",
+    "medicine3":"",
+    "medicine4":"",
+    "id":3
   },
   {
     "name":"Influenza الانفلونزا",
@@ -511,8 +618,11 @@
     "symptom3":"muscle aches آلام العضلات",
     "symptom4":"joint pain الم المفاصل",
     "symptom5":"cough سعال",
-    "id":47
-
+    "medicine1":"Stellar",
+    "medicine2":"",
+    "medicine3":"",
+    "medicine4":"",
+    "id":2
   },
   {
     "name":"Pulmonary hypertension ارتفاع ضغط الشريان الرئوي",
@@ -521,8 +631,11 @@
     "symptom3":"chest pain ألم صدر",
     "symptom4":"dizziness دوخة",
     "symptom5":"fainting إغماء",
-    "id":48
-
+    "medicine1":"Diuretics",
+    "medicine2":"",
+    "medicine3":"",
+    "medicine4":"",
+    "id":3
   },
   {
     "name":"sleep apnea توقف التنفس أثناء النوم",
@@ -531,8 +644,37 @@
     "symptom3":"Pauses in breathing توقف التنفس",
     "symptom4":"Difficulties with memory and concentration صعوبات في الذاكرة والتركيز",
     "symptom5":"irritability التهيج",
-    "id":49
-
+    "medicine1":"Adaptive servo-ventilation",
+    "medicine2":"",
+    "medicine3":"",
+    "medicine4":"",
+    "id":2
+  },
+  {
+    "name":"Respiratory synovial virus الفيروس المخلوي التنفسي",
+    "symptom1":"wheezing cough سعال صفير",
+    "symptom2":"cold البرد",
+    "symptom3":"short, shallow and rapid breathing تنفس قصير وضحل وسريع",
+    "symptom4":"",
+    "symptom5":"",
+    "medicine1":"Intravenous fluids",
+    "medicine2":"",
+    "medicine3":"",
+    "medicine4":"",
+    "id":3
+  },
+  {
+    "name":"Tuberculosis مرض الدرن",
+    "symptom1":"A cough that lasts more than three weeks سعال يستمر لأكثر من ثلاثة أسابيع",
+    "symptom2":"Loss of appetite and unintentional weight loss فقدان الشهية وفقدان الوزن بشكل غير مقصود",
+    "symptom3":"Fever حمة",
+    "symptom4":"Night sweats تعرق ليلي",
+    "symptom5":"Chills قشعريرة",
+    "medicine1":"revamping",
+    "medicine2":"pyramidal",
+    "medicine3":"ethanol",
+    "medicine4":"",
+    "id":2
   },
   {
     "name":"Acute Respiratory Distress Syndrome متلازمة الضائقة التنفسية الحادة",
@@ -541,7 +683,37 @@
     "symptom3":"faster heart beating تسريع ضربات القلب",
     "symptom4":"pain الم",
     "symptom5":"cough سعال",
-    "id":50
+    "medicine1":"consult doctor",
+    "medicine2":"",
+    "medicine3":"",
+    "medicine4":"",
+    "id":3
+  },
+  {
+    "name":"Asbestosis الاسبست",
+    "symptom1":"Shortness of breath ضيق في التنفس",
+    "symptom2":"Persistent dry cough السعال الجاف المستمر",
+    "symptom3":"Chest tightness or chest pain ضيق في الصدر أو ألم في الصدر",
+    "symptom4":"A dry, crackling sound in the lungs while breathing in صوت طقطقة جاف في الرئتين أثناء التنفس",
+    "symptom5":"Wider and rounder than normal fingertips and toes أعرض وأكثر استدارة من أطراف الأصابع والقدمين العادية",
+    "medicine1":"oxygen",
+    "medicine2":"stay away from cold places",
+    "medicine3":"consult doctor",
+    "medicine4":"",
+    "id":3
+  },
+  {
+    "name":"Aspergillus داء الرشاشيات",
+    "symptom1":"Shortness of breath ضيق في التنفس",
+    "symptom2":"fatigue إعياء",
+    "symptom3":"wheezing تنفس بصفير",
+    "symptom4":"weight loss فقدان الوزن",
+    "symptom5":"Wider and rounder than normal fingertips and toes ",
+    "medicine1":"iteration",
+    "medicine2":"surgery",
+    "medicine3":"",
+    "medicine4":"",
+    "id":3
   },
   {
     "name":"bronchitis التهاب قصيبات",
@@ -549,18 +721,89 @@
     "symptom2":"runny nose سيلان الأنف",
     "symptom3":"fever حمة",
     "symptom4":"stuffy nose انسداد الأنف",
-    "symptom5":" ",
-    "id":51
+    "symptom5":"",
+    "medicine1":"inhaler",
+    "medicine2":"consult doctor",
+    "medicine3":"saline nose drops",
+    "medicine4":"",
+    "id":3
+  },
+  {
+    "name":"Meningitis  التهاب السحايا",
+    "symptom1":"Sudden severe headache  صداع شديد مفاجئ",
+    "symptom2":"A sudden sharp rise in temperature  ارتفاع مفاجئ حاد في درجة الحرارة",
+    "symptom3":"Neck stiffness and spasm  تصلب وتشنج العنق",
+    "symptom4":"Nausea and vomiting  غثيان وقيء",
+    "symptom5":"difficulty concentrating  صعوبة في التركيز",
+    "medicine1":"antibiotic",
+    "medicine2":"centring",
+    "medicine3":"cenotaph",
+    "medicine4":"penicillin",
+    "id":2
+  },
+  {
+    "name": "Brain tumors  أورام الدماغ",
+    "symptom1":"Severe headache,   الصداع الشديد ",
+    "symptom2":"nervous spasms التشنجات العصبية",
+    "symptom3":"Difficulty thinking and concentrating صعوبة في التفكير والتركيز",
+    "symptom4":"stutter speech  تلعثم الكلام",
+    "symptom5":"A personality and mood disorder ضطراب في الشخصية والمزاج",
+    "medicine1":"radiotherapy",
+    "medicine2":"crusting",
+    "medicine3":"temporize",
+    "medicine4":"procaine",
+    "id":2
+  },
+  {
+    "name": "Multiple sclerosis  التصلب اللويحي",
+    "symptom1":"extreme tiredness  التعب الشديد",
+    "symptom2":"Difficulty walking and moving صعوبة في المشي والحركة",
+    "symptom3":"Vision problems, such as blurring and double vision مشكلات في الرؤية، مثل: الغباش، وازدواجية الرؤية",
+    "symptom4":"Loss of bladder control  فقدان السيطرة على المثانة",
+    "symptom5":"Numbness and tingling in various parts of the body خدران وتنميل في مختلف أجزاء الجسم",
+    "medicine1":"corticosteroid",
+    "medicine2":"interferon",
+    "medicine3":"glacier",
+    "medicine4":"national",
+    "id":6
+  },
+  {
+    "name": "Stroke   الجلطة الدماغية",
+    "symptom1":"Slurred speech and inability to understand others تلعثم الكلام وعدم القدرة عل استيعاب الآخرين",
+    "symptom2":"Numbness or paralysis on one side or one side of the face شلل في أحد الأطراف ",
+    "symptom3":"Vision problems  مشكلات في الرؤية مثل فقدان النظر بشكل مفاجئ",
+    "symptom4":"Sudden persistent headache صداع شديد مفاجئ مستمر ",
+    "symptom5":"Sudden loss of balance  فقدان التوازن بشكل مفاجئ أو فقدان الوعي أحيانًا",
+    "medicine1":"consult doctor",
+    "medicine2":"Tissue Plainsmen activator TPA",
+    "medicine3":"Thrombotic",
+    "medicine4":"Intravenous fluids",
+    "id": 2
 
+  },
+  {
+    "name": "Alzheimer's  الزهايمر",
+    "symptom1":"Memory disorder and inability to form new memories اضطراب الذاكرة",
+    "symptom2":"Difficulty making decisions, cognition and concentration صعوبة في اتخاذ القرارات",
+    "symptom3":"Difficulty identifying people and names of things صعوبة في تحديد هوية الأشخاص",
+    "symptom4":"Disordered ability to read, write and speak اضطراب القدرة على القراءة والكتابة والكلام",
+    "symptom5":"Personality disorder and severe mood swings ضطراب الشخصية وتقلب المزاج الحاد.",
+    "medicine1": "do brain exercise",
+    "medicine2": "keep physical activity",
+    "medicine3":"",
+    "medicine4":"",
+    "id": 2
   }
 
 
 
 
-
-
-
-
-
-
 ]
+
+
+
+
+
+
+
+

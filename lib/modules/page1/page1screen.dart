@@ -76,7 +76,7 @@ class PageScreen1 extends StatelessWidget {
                               color: Colors.amber,
                               child: MaterialButton(
                                 onPressed: (){
-                                   navigatto(context, const MaleScreen());
+                                   navigatto(context,  MaleScreen());
                                 },
                                 child: const Text(
                                   'Male',

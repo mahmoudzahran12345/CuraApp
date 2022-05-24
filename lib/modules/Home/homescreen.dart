@@ -486,8 +486,6 @@ backgroundColor: Colors.white,
                               ),
                               child: MaterialButton(
                                 onPressed: (){
-                                  navigatto(context, WebViewExample());
-
                                 },
                                 child: Text(
                                   'Read More',

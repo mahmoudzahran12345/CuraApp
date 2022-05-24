@@ -207,7 +207,7 @@ class MaleScreenRotate extends StatelessWidget {
                 height: 40,
                 color: Colors.amber,
                 child: TextButton(onPressed: (){
-                  navigatto(context, const MaleScreen());
+                  navigatto(context,  MaleScreen());
                 }, child: const Text('back',style: TextStyle(fontWeight: FontWeight.bold,color:Colors.black,fontSize: 20),)),
               )
             ],
