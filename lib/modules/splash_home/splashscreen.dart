@@ -12,15 +12,15 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: seccolor,
       appBar: AppBar(
-      backgroundColor: Colors.white,
+      backgroundColor: seccolor,
       title: Center(
         child: DefaultTextStyle(
-          style:   TextStyle(
+          style:   const TextStyle(
             fontSize: 30.0,
             fontFamily: 'Canterbury',
-            color: secondColor,
+            color: pramcolor,
             fontWeight: FontWeight.bold
           ),
           child: AnimatedTextKit(
@@ -42,13 +42,20 @@ class SplashScreen extends StatelessWidget {
           child: AnimatedSplashScreen(
               splash:SingleChildScrollView(
                 child: Column(
-                  children:const [
-                    Image(
-                      image: AssetImage('assets/Images/logo.png'),
-                      width: 350,
-                      height: 250,
+                  children: [
+                    Stack(
+                      alignment: AlignmentDirectional.center,
+                      children: [
+                        Image(
+                          image: AssetImage('assets/Images/logo.png'),
+                          width: 350,
+                          height: 250,
+                          color: pramcolor,
+                        ) ,
+                        Text('Cura App',textAlign: TextAlign.center,style: TextStyle(color: seccolor,fontSize: 30),)
 
-                    ) ,
+                      ],
+                    )
                   ],
                 ),
               ),
@@ -57,10 +64,8 @@ class SplashScreen extends StatelessWidget {
             duration: 4000,
             splashTransition: SplashTransition.fadeTransition,
             pageTransitionType:PageTransitionType.rightToLeftWithFade ,
-            backgroundColor: Colors.white,
+            backgroundColor: seccolor,
             animationDuration: const Duration(seconds: 3),
-
-
           ),
         ),
       )

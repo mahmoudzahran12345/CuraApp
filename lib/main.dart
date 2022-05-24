@@ -3,7 +3,11 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:graduationproject/shared/cubit/login/blocobserver.dart';
+import 'modules/Home/home1.dart';
+import 'modules/Home/homescreen.dart';
 import 'modules/page1/malescreen.dart';
+import 'modules/splash_home/splashscreen.dart';
+import 'modules/splash_home/splashscreen2.dart';
 void main()async {
   Bloc.observer = MyBlocObserver();
   WidgetsFlutterBinding.ensureInitialized();
@@ -17,7 +21,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.purple,
         appBarTheme:  const AppBarTheme(
             systemOverlayStyle: SystemUiOverlayStyle(
                 statusBarColor: Colors.black12,
@@ -25,7 +29,7 @@ class MyApp extends StatelessWidget {
             )
         ),
       ),
-      home:      MaleScreen(),
+      home:       const SplashScreen2(),
     );
   }
 }

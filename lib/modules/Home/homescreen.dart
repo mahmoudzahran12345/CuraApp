@@ -20,18 +20,23 @@ class HomeScreen extends StatelessWidget {
 backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        iconTheme: IconThemeData(color: secondColor),
+        iconTheme: IconThemeData(color: pramcolor),
         elevation: 0,
         actions:  [
-
           TextButton(onPressed: (){
-            navigatto(context,  LoginPage());
-          }, child: const Text('Login')),
+            navigatto(context,   LoginPage());
+          }, child: Container(
+              width: 70,
+              height: 35,
+              color: pramcolor,
+              child: const Center(child: Text('Login',style: TextStyle(color: seccolor),)))),
           TextButton(onPressed: (){
             navigatto(context,  const RegisterScreen());
-
-          }, child: const Text('Signup'))
-
+          }, child: Container(
+              width: 70,
+              height: 35,
+              color: pramcolor,
+              child: Center(child: const Text('Signup',style: TextStyle(color: seccolor),))))
         ],
       ),
       body: SingleChildScrollView(
@@ -240,8 +245,6 @@ backgroundColor: Colors.white,
                     ),
                   ),
                 ),
-
-
 
               ],
             ),

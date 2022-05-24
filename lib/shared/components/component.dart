@@ -25,17 +25,24 @@ Widget ItemDrawer({
         child: Icon(
           iconData,
           size: 30,
-          color:  secondColor,
+          color:  pramcolor,
         ),
       ),
       Expanded(
         flex: 3,
-        child: Text(
-          title,
-          style:  TextStyle(
-            color:  secondColor,
-            fontSize: 25,
-            fontWeight: FontWeight.bold
+        child: Container(
+          height: 50,
+          decoration: BoxDecoration(borderRadius: BorderRadiusDirectional.circular(20),  color: pramcolor,
+          ),
+          child: Center(
+            child: Text(
+              title,
+              style:  TextStyle(
+                color:  seccolor,
+                fontSize: 25,
+                fontWeight: FontWeight.bold
+              ),
+            ),
           ),
         ),
       ),
@@ -65,9 +72,9 @@ Widget textformfeild({
       left: 20.0
   ),
   child: Container(
-    height: 45.0,
+    height: 55.0,
     decoration: BoxDecoration(
-        color: secondColor,
+        color: pramcolor,
         borderRadius: BorderRadius.circular(25.0)
     ),
     child: TextFormField(

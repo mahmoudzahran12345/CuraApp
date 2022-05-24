@@ -11,7 +11,7 @@ class MaleScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: secondColor,
+        backgroundColor: seccolor,
         body: Padding(
           padding:  const EdgeInsets.all( 20.0),
           child: Center(
@@ -139,7 +139,6 @@ class MaleScreen extends StatelessWidget {
                               ),
                               onTap: (){
                                 navigatto(context,  const Diseases(id: 4,));
-
                               },
                             ),
                             InkWell(
@@ -158,7 +157,6 @@ class MaleScreen extends StatelessWidget {
                               ),
                               onTap: (){
                                 navigatto(context,  const Diseases(id: 9,));
-
                               },
                             ),
 
@@ -175,7 +173,6 @@ class MaleScreen extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
 
                           children:  [
-
                             InkWell(
                               child: const Image(
                                 image: AssetImage('assets/Images/leg3.png'),
@@ -196,8 +193,6 @@ class MaleScreen extends StatelessWidget {
 
                               },
                             ),
-
-
                           ],
                         ),
                         Row(

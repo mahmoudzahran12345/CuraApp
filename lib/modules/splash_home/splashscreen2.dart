@@ -7,6 +7,8 @@ import 'package:graduationproject/shared/styles/colors.dart';
 import 'package:lottie/lottie.dart';
 import 'package:page_transition/page_transition.dart';
 
+import '../Home/home1.dart';
+
 
 class SplashScreen2 extends StatelessWidget {
   const SplashScreen2({Key? key}) : super(key: key);
@@ -20,12 +22,12 @@ class SplashScreen2 extends StatelessWidget {
         elevation: 0,
         title: Center(
           child: DefaultTextStyle(
-      style:  TextStyle(
-      fontSize: 30.0, color: secondColor
+      style:  const TextStyle(
+      fontSize: 30.0, color: pramcolor
       ),
       child: AnimatedTextKit(
           animatedTexts: [
-            WavyAnimatedText('CURA APP'),
+            WavyAnimatedText('CURA APP Medical'),
           ],
           isRepeatingAnimation: true,
           repeatForever: true,
@@ -34,52 +36,46 @@ class SplashScreen2 extends StatelessWidget {
     ),
         ) ,
       ),
-        body: Padding(
-          padding: const EdgeInsets.only(
-            left: 65.0,
-            top: 50.0
-          ),
-          child: AnimatedSplashScreen(
-            splash:SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children:    [
-                 Lottie.asset('assets/Images/doctor3.json'),
-                  const SizedBox(height: 20.0,),
-                  Padding(
-                    padding: const EdgeInsets.only(
-                      right: 35.0
+        body: AnimatedSplashScreen(
+          splash:SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children:    [
+                Lottie.asset('assets/Images/doctor.json',fit: BoxFit.cover,height: 350),
+                const SizedBox(height: 20.0,),
+                Padding(
+                  padding: const EdgeInsets.only(
+                    right: 35.0
+                  ),
+                  child: DefaultTextStyle(
+                    style:  const TextStyle(
+                        fontSize: 30.0,
+                        fontWeight: FontWeight.bold,
+                        color: pramcolor
                     ),
-                    child: DefaultTextStyle(
-                      style:  TextStyle(
-                          fontSize: 30.0,
-                          fontWeight: FontWeight.bold,
-                          color: secondColor
-                      ),
-                      child: AnimatedTextKit(
-                        animatedTexts: [
-                          TypewriterAnimatedText('Get Well Soon'),
-                        ],
-                        repeatForever: true,
-                        pause: const Duration(milliseconds: 4000),
-                        displayFullTextOnTap: true,
-                        stopPauseOnTap: true,
-                      ),
+                    child: AnimatedTextKit(
+                      animatedTexts: [
+                        TypewriterAnimatedText('Get Well Soon'),
+                      ],
+                      repeatForever: true,
+                      pause: const Duration(milliseconds: 8000),
+                      displayFullTextOnTap: true,
+                      stopPauseOnTap: true,
                     ),
-                  )
-                ],
-              ),
+                  ),
+                )
+              ],
             ),
-            nextScreen:  HomeScreen(),
-            splashIconSize: 550,
-            duration: 10000,
-            splashTransition: SplashTransition.scaleTransition,
-            pageTransitionType:PageTransitionType.rightToLeftWithFade ,
-            backgroundColor: Colors.white,
-            animationDuration: const Duration(seconds: 1),
-
-
           ),
+          nextScreen:  const Home(),
+          splashIconSize: 550,
+          duration: 10000,
+          splashTransition: SplashTransition.scaleTransition,
+          pageTransitionType:PageTransitionType.rightToLeftWithFade ,
+          backgroundColor: Colors.white,
+          animationDuration: const Duration(seconds: 1),
+
+
         )
 
     );

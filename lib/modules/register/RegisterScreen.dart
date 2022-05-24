@@ -6,6 +6,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:graduationproject/modules/page1/page1screen.dart';
 import 'package:graduationproject/shared/components/component.dart';
 import 'package:graduationproject/shared/cubit/login/loginstate.dart';
+import 'package:lottie/lottie.dart';
 
 import '../../layout/fadeAnaimation/fadeanamationscreen.dart';
 import '../../shared/components/constant.dart';
@@ -35,7 +36,7 @@ class RegisterScreen extends StatelessWidget {
                 children: [
                   const SizedBox(
                     height: headerHeight,
-                    child: HeaderWidget(headerHeight, true, Icons.login_rounded),
+                    child: HeaderWidget(headerHeight, true, Icons.login_rounded), //let's create a common header widget
                   ),
                   SafeArea(
                     child: Container(
@@ -43,9 +44,9 @@ class RegisterScreen extends StatelessWidget {
                         margin: const EdgeInsets.fromLTRB(20, 10, 20, 10),
                         child: Column(
                           children: [
-                            Text(
+                            const Text(
                               'Cura',
-                              style: TextStyle(fontSize: 60, fontWeight: FontWeight.bold,color: secondColor),
+                              style: TextStyle(fontSize: 60, fontWeight: FontWeight.bold,color: pramcolor),
                             ),
                             const SizedBox(height: 20.0),
                             Form(
@@ -111,7 +112,7 @@ class RegisterScreen extends StatelessWidget {
                                       child: Container(
                                         height: 45.0,
                                         decoration: BoxDecoration(
-                                            color: secondColor,
+                                            color: pramcolor,
                                             borderRadius: BorderRadius.circular(25.0)
                                         ),
                                         child: TextFormField(
@@ -178,7 +179,7 @@ class RegisterScreen extends StatelessWidget {
                                             width: double.infinity,
                                             height: 45.0,
                                             decoration: BoxDecoration(
-                                                color: secondColor,
+                                                color: pramcolor,
                                                 borderRadius: BorderRadius.circular(25.0)
                                             ),
                                             child: MaterialButton(
