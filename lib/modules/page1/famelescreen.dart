@@ -20,17 +20,17 @@ class FemaleScreen extends StatelessWidget {
         listener: (context,state){},
         builder: (context,state){
           return Scaffold(
-              backgroundColor: secondColor,
+              backgroundColor: seccolor,
               body: Padding(
                 padding:  const EdgeInsets.all( 20.0),
                 child: Center(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      CustomText(title: 'Choose a place for pain',color: Colors.amber,fontSize: 25,alignment: Alignment.center),
+                      CustomText(title: 'Choose a place for pain',color: pramcolor,fontSize: 25,alignment: Alignment.center),
                       const SizedBox(height: 10,),
                       Container(
-                        color: Colors.black54,
+                        color: pramcolor,
                         width: double.infinity,
                         height: 590,
                         child:  Center(
@@ -206,10 +206,10 @@ class FemaleScreen extends StatelessWidget {
                       Container(
                         width: 120,
                         height: 40,
-                        color: Colors.amber,
+                        color: pramcolor,
                         child: TextButton(onPressed: (){
                           navigatto(context, const FemaleScreenRotate());
-                        }, child: const Text('Rotate',style: TextStyle(fontWeight: FontWeight.bold,color:Colors.black,fontSize: 20),)),
+                        }, child: const Text('Rotate',style: TextStyle(fontWeight: FontWeight.bold,color:seccolor,fontSize: 20),)),
                       )
                     ],
                   ),

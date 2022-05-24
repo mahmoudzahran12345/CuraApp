@@ -12,16 +12,16 @@ class MaleScreenRotate extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: secondColor,
+        backgroundColor: seccolor,
         body: Padding(
           padding:  const EdgeInsets.all( 20.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CustomText(title: 'Choose a place for pain',color: Colors.amber,fontSize: 25,alignment: Alignment.center),
+              CustomText(title: 'Choose a place for pain',color: pramcolor,fontSize: 25,alignment: Alignment.center),
               const SizedBox(height: 10,),
               Container(
-                color: Colors.black54,
+                color: pramcolor,
                 width: double.infinity,
                 height: 490,
                 child: Column(
@@ -205,10 +205,10 @@ class MaleScreenRotate extends StatelessWidget {
               Container(
                 width: 120,
                 height: 40,
-                color: Colors.amber,
+                color: pramcolor,
                 child: TextButton(onPressed: (){
                   navigatto(context,  MaleScreen());
-                }, child: const Text('back',style: TextStyle(fontWeight: FontWeight.bold,color:Colors.black,fontSize: 20),)),
+                }, child: const Text('back',style: TextStyle(fontWeight: FontWeight.bold,color:seccolor,fontSize: 20),)),
               )
             ],
           ),

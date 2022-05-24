@@ -10,18 +10,18 @@ class PageScreen1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: secondColor,
+        backgroundColor: seccolor,
              elevation: 0,
         title:  const Text(
           'Please Choose Gender',
           style: TextStyle(
               fontSize: 25.0,
               fontWeight: FontWeight.bold,
-              color: Colors.amber
+              color: pramcolor
           ),
         ),
       ),
-     backgroundColor: secondColor,
+     backgroundColor: seccolor,
       body: Center(
         child: SingleChildScrollView(
           child: Padding(
@@ -39,7 +39,7 @@ class PageScreen1 extends StatelessWidget {
                               foregroundDecoration: const BoxDecoration(
                               ),
                             decoration:  const BoxDecoration(
-                              color:Colors.black54,
+                              color:pramcolor,
                               image:  DecorationImage(
                                 image: AssetImage('assets/Images/file3.png'),
                                 fit: BoxFit.cover
@@ -63,7 +63,7 @@ class PageScreen1 extends StatelessWidget {
                           children: [
                             const CircleAvatar(
                               radius: 44,
-                              backgroundColor: Colors.amber,
+                              backgroundColor: pramcolor,
                               child:  CircleAvatar(
                                 radius: 40.0,
                                 backgroundImage: AssetImage('assets/Images/male.jpg'),
@@ -73,7 +73,7 @@ class PageScreen1 extends StatelessWidget {
                             Container(
                               width: 89,
                               height: 30,
-                              color: Colors.amber,
+                              color: pramcolor,
                               child: MaterialButton(
                                 onPressed: (){
                                    navigatto(context,  MaleScreen());
@@ -97,7 +97,7 @@ class PageScreen1 extends StatelessWidget {
                           children: [
                             const CircleAvatar(
                               radius: 44,
-                              backgroundColor: Colors.amber,
+                              backgroundColor: pramcolor,
                               child:  CircleAvatar(
                                 radius: 40.0,
                                 backgroundImage: AssetImage('assets/Images/famale.jpg'),
@@ -107,7 +107,7 @@ class PageScreen1 extends StatelessWidget {
                             Container(
                               width: 89,
                               height: 30,
-                              color: Colors.amber,
+                              color: pramcolor,
                               child: MaterialButton(
                                 onPressed: (){
                                   navigatto(context, const FemaleScreen());
