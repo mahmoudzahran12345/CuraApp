@@ -7,6 +7,7 @@ import 'package:graduationproject/models/symptoms/symptommodel.dart';
 import '../../layout/webview/webviewscreen.dart';
 import '../../shared/components/component.dart';
 import '../../shared/styles/colors.dart';
+import '../medcine.dart';
 
 class Diseases extends StatefulWidget {
   final int id ;
@@ -26,11 +27,11 @@ class _DiseasesState extends State<Diseases> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor:seccolor,
       appBar: AppBar(
-        backgroundColor: Colors.grey,
+        backgroundColor: seccolor,
         elevation: 0.0,
-        title: const Center(child: Text('Card of Symptoms and Diagnosis',style: TextStyle(color: Colors.black54),)),
+        title: const Center(child: Text('Card of Symptoms and Diagnosis',style: TextStyle(color: pramcolor),)),
       ),
       body: ListView.separated(
           itemBuilder: (context,index)=>Column(
@@ -43,7 +44,7 @@ class _DiseasesState extends State<Diseases> {
                       width: double.infinity,height: 70,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadiusDirectional.circular(25.0),
-                        color: Colors.black54,
+                        color: pramcolor,
 
                       ),
                       child: Center(
@@ -78,6 +79,7 @@ class _DiseasesState extends State<Diseases> {
                               Expanded(
                                 child: Text('${sections[index].symptoms1}',style: const TextStyle(
                                   fontSize: 20,
+                                  color: pramcolor
                                 ),),
                               ),
                               const SizedBox(width: 10.0,),
@@ -91,7 +93,9 @@ class _DiseasesState extends State<Diseases> {
                               Expanded(
                                 child: Text('${sections[index].symptoms2}',style: const TextStyle(
                                   fontSize: 20,
-                                  overflow: TextOverflow.ellipsis
+                                    color: pramcolor,
+
+                                    overflow: TextOverflow.ellipsis
                                 ),),
                               ),
                               const SizedBox(width: 10.0,),
@@ -107,6 +111,8 @@ class _DiseasesState extends State<Diseases> {
                               Expanded(
                                 child: Text('${sections[index].symptoms3}',style: const TextStyle(
                                   fontSize: 20,
+                                  color: pramcolor,
+
                                 ),),
                               ),
                               const SizedBox(width: 10.0,),
@@ -122,6 +128,8 @@ class _DiseasesState extends State<Diseases> {
                               Expanded(
                                 child: Text('${sections[index].symptoms4}',style: const TextStyle(
                                   fontSize: 20,
+                                  color: pramcolor,
+
                                 ),),
                               ),
                               const SizedBox(width: 10.0,),
@@ -135,6 +143,8 @@ class _DiseasesState extends State<Diseases> {
                               Expanded(
                                 child: Text('${sections[index].symptoms5}',style: const TextStyle(
                                   fontSize: 20,
+                                  color: pramcolor,
+
                                 ),),
                               ),
                               const SizedBox(width: 10.0,),
@@ -143,12 +153,12 @@ class _DiseasesState extends State<Diseases> {
                         ),
                         MaterialButton(
                           onPressed: (){
-                            navigatto(context, WebViewExample());
+                            navigatto(context, const Medicine());
                           },
-                          child: Text(
+                          child: const Text(
                             'Medicine',
                             style: TextStyle(
-                              color: secondColor,
+                              color: pramcolor,
                               fontSize: 25
                             ),
                           ),
