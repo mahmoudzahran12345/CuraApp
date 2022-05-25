@@ -27,6 +27,9 @@ class RegisterScreen extends StatelessWidget {
           if(state is CuraCreateSuccessfulState){
             navigatto(context, const PageScreen1());
           }
+          else if(state is CuraCreateErrorState ){
+            showDialog2(context,"Email is already exist");
+          }
         },
         builder: (context,state){
           return  Scaffold(

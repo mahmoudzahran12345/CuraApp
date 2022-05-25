@@ -793,7 +793,176 @@
     "medicine3":"",
     "medicine4":"",
     "id": 2
+  },
+  {
+    "name":"Ovarian Cysts تكيس المبايض",
+    "symptom1":"Abdominal pain or bloating ألم أو انتفاخ في البطن",
+    "symptom2":"Difficulty urinating صعوبات في التبول",
+    "symptom3":"Dull pain in the lower backألم خافت في أسفل الظهر",
+    "symptom4":"Pain during menstruation أوجاع في فترة الحيض",
+    "symptom5":"Severe bleeding نزيف حاد",
+    "medicine1":"Laparoscopic surgery",
+    "medicine2":"open abdomen",
+    "medicine3":"Chemotherapy",
+    "medicine4":"Radiotherapy",
+    "id":10
+
+  },
+  {
+    "name":"Polycystic Ovary Syndrome متلازمة المبيض المتعدد الكيسات",
+    "symptom1":"Acne حَب الشباب",
+    "symptom2":"Gain weight زيادة الوزن",
+    "symptom3":"irregular menstruation عدم انتظام الدورة الشهرية",
+    "symptom4":"Decreased hair density on the head انخفاض كثافة الشعر على الرأس",
+    "symptom5":"infertility العقم",
+    "medicine1":"exercise",
+    "medicine2":"Follow a healthy diet",
+    "medicine3":"hormonal drugs",
+    "medicine4":"Undergo constant medical supervision",
+    "id":10
+
+  },
+  {
+    "name":"Hyperprolactinemia ارتفاع هرمون الحليب",
+    "symptom1": "irregular menstruation عدم انتظام الدورة الشهرية",
+    "symptom2":" Osteoporosis disease الإصابة بمرض تخلخل العظام",
+    "symptom3":"low fertility انخفاض الخصوبة",
+    "symptom4":"Headache and difficulty seeing صداع وصعوبات بالرؤية",
+    "symptom5":"",
+    "medicine1":"Bromocriptine",
+    "medicine2":"",
+    "medicine3":"",
+    "medicine4":"",
+    "id":11
+
+  },
+  {
+    "name":"Prolactinoma وَرَمٌ برولاكْتيني",
+    "symptom1": "irregular menstruation عدم انتظام الدورة الشهرية",
+    "symptom2":" Secretion of milk from the breast in periods other than pregnancy إفراز الحليب من الثدي في فترات غير فترة حمل",
+    "symptom3":"Vaginal dryness جفاف المهبل",
+    "symptom4":"headache الصداع",
+    "symptom5":"",
+    "medicine1":"Dopamine",
+    "medicine2":"Transsphenoidal",
+    "medicine3":"",
+    "medicine4":"",
+    "id":11
+
+  },
+  {
+    "name":"Fibrocystic breasts الداء الكسِي الليفي في الثدي",
+    "symptom1": "Presence of lumps in the breast وجود كتل في الثدي ",
+    "symptom2":" breast pain ألم في الثدي",
+    "symptom3":"An increase in pain or the size of lumps in the breast during ovulation زيادة في الألم أو بحجم الكتل في الثدي أثناء الإباضة ",
+    "symptom4":"Brown secretions from the chestافرازات من الصدر بنيه",
+    "symptom5":"",
+    "medicine1":"Aspiration of cystic fluid from the breast",
+    "medicine2":" surgical treatment",
+    "medicine3":"Danazol",
+    "medicine4":"",
+    "id":11
+
+  },
+  {
+    "name":"Vaginitis التهابات المهبل",
+    "symptom1": "Change in color, odor and amount of vaginal secretions تغير لون ورائحة وكمية الإفرازات من المهبل ",
+    "symptom2":" Vaginal itching or irritation حكة أو تهيج المهبل",
+    "symptom3":"A burning feeling in the vagina شعور حارق في المهبل",
+    "symptom4":"Feeling pain while urinating الشعور بالألم أثناء التبول ",
+    "symptom5":"light vaginal bleeding نزيف مهبلي خفيف",
+    "medicine1":"Metronidazole",
+    "medicine2":" Clotrimazole",
+    "medicine3":"Fluconazole",
+    "medicine4":"Clindamycin",
+    "id":10
+
+  },
+  {
+    "name":"Pelvic inflammatory disease - PID مرض التهابي حوضي",
+    "symptom1": "pelvic pain ألم في الحوض",
+    "symptom2":" Abdominal pain, especially in the lower abdomen ألم في البطن وخصوصًا أسفل البطن",
+    "symptom3":"fever and chills حمّى وقشعريرة",
+    "symptom4":"Nausea and vomiting غثيان وقيء",
+    "symptom5":"Pain in the upper right side of the abdomen ألم في الجزء العلوي من الجهة اليمنى من البطن",
+    "medicine1":"Cefoxitin",
+    "medicine2":" Metronidazole",
+    "medicine3":"Ceftriaxone",
+    "medicine4":"Doxycycline",
+    "id":10
+
+  },
+  {
+    "name":"Postpartum depression اكتئاب ما بعد الولادة",
+    "symptom1": "mood deterioration تردي الحالة المزاجية ",
+    "symptom2":" carelessness اللامبالاة",
+    "symptom3":"Appetite and sleep disturbances اضطرابات في الشهية والنوم",
+    "symptom4":"Excessive emotions انفعالات زائدة",
+    "symptom5":"Fatigue and lethargy التعب والخمول",
+    "medicine1":"Sertraline",
+    "medicine2":" Electroconvulsive treatment",
+    "medicine3":"",
+    "medicine4":"",
+    "id":11
+
+  },
+  {
+    "name":"Dysfunctional uterine bleeding النزف الرحمي غير المنتظم",
+    "symptom1": "Menorrhagia غزارة الطمث ",
+    "symptom2":" Bleeding during menopause نزيف أثناء فترة انقطاع الطمث",
+    "symptom3":"Persistence of menstruation for a long time استمرار فترة الطمث لمدة طويلة",
+    "symptom4":"",
+    "symptom5":"",
+    "medicine1":"progesterone therapy",
+    "medicine2":" Estrogen therapy",
+    "medicine3":"Ablation",
+    "medicine4":"Hysterectomy",
+    "id":10
+
+  },
+  {
+    "name":"Vulvodynia الألم المزمن في الفرج",
+    "symptom1": "Heartburn in the area حرقة في المنطقة ",
+    "symptom2":" skin ulcers تقرحات جلدية",
+    "symptom3":"tingling feelingشعور بالوخز",
+    "symptom4":"skins تسلخات",
+    "symptom5":"severe itching حكة شديدة",
+    "medicine1":"Steroids",
+    "medicine2":" Tricyclic antidepressants",
+    "medicine3":"Anticonvulsants",
+    "medicine4":"Antihistamines",
+    "id":10
+
+  },
+  {
+    "name":"Herpes simplex virus فيروس الهربس البسيط ",
+    "symptom1": "Blister ",
+    "symptom2":" scars in particular on the cervix, النّدوب على وجه الخصوص في عنق الرّحم",
+    "symptom3":"urinary retention حصر البول",
+    "symptom4":"constipation الإمساك",
+    "symptom5":"",
+    "medicine1":"Acyclovir",
+    "medicine2":" Valacyclovir",
+    "medicine3":"Famciclovir",
+    "medicine4":"",
+    "id":10
+
+  },
+  {
+    "name":"Vaginal Yeast Infection الفطريات المهبلية",
+    "symptom1": "Soreness or itching in the vagina الوجع أو الحكة في المهبل",
+    "symptom2":"sticky, cottage cheese-like secretions إفرازات لزجة تُشبه الجبنة",
+    "symptom3":"An unpleasant feeling of burning around the opening of the vagina الشعور المزعج بالحرقة حول فتحة المهبل",
+    "symptom4":"Redness and swelling in the vulva area احمرار وانتفاخ في منطقة الفرج",
+    "symptom5":"consult doctor",
+    "medicine1":"Butoconazole",
+    "medicine2":" Terconazole",
+    "medicine3":"Tioconazole",
+    "medicine4":"Clotrimazole",
+    "id":10
+
   }
+
 
 
 

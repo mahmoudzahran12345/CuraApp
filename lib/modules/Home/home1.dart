@@ -19,10 +19,10 @@ class Home extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        iconTheme: IconThemeData(color: pramcolor,size: 40),
+        iconTheme: const IconThemeData(color: pramcolor,size: 40),
         elevation: 0,
-        title: Center(
-          child: const Text(
+        title: const Center(
+          child: Text(
             "Cura Medical",
             style: TextStyle(color: pramcolor,fontSize: 25),
           ),
@@ -122,52 +122,57 @@ class Home extends StatelessWidget {
         ),
 
       ),
-     body: Column(
-               children: [
-                 Row(children: [
-                   Expanded(
-                     child: TextButton(onPressed: (){
-                       navigatto(context,   LoginPage());
-                     }, child: Container(
-                         width: 150,
-                         height: 45,
-                         decoration: BoxDecoration(borderRadius: BorderRadiusDirectional.circular(20),
-                           color: pramcolor,
+     body: SingleChildScrollView(
+       child: Padding(
+         padding: const EdgeInsets.all(30.0),
+         child: Column(
+                   children: [
+                     Row(children: [
+                       Expanded(
+                         child: TextButton(onPressed: (){
+                           navigatto(context,   LoginPage());
+                         }, child: Container(
+                             width: 150,
+                             height: 45,
+                             decoration: BoxDecoration(borderRadius: BorderRadiusDirectional.circular(20),
+                               color: pramcolor,
+                             ),
+                             child: const Center(child: Text('Login',style: TextStyle(color: seccolor,fontSize: 20),)))
                          ),
-                         child: const Center(child: Text('Login',style: TextStyle(color: seccolor,fontSize: 20),)))
-                     ),
-                   ),
-                   Expanded(
-                     child: TextButton(onPressed: (){
-                       navigatto(context,  const RegisterScreen());
-                     }, child: Container(
-                         width: 150,
-                         height: 45,
-                         decoration: BoxDecoration(borderRadius: BorderRadiusDirectional.circular(20),
-                           color: pramcolor,
-                         ),
-                         child: const Center(child: Text('Signup',style: TextStyle(color: seccolor,fontSize: 20),)))),
-                   ),
-                 ],),
-                 SizedBox(height: 20,),
-                 Lottie.asset('assets/Images/mmm.json',fit: BoxFit.cover),
-                 SizedBox(height: 20,),
-
-                 Padding(
-                   padding: const EdgeInsets.all(20.0),
-                   child: Container(
-                       width: double.infinity,
-                       height: 95,
-                       decoration: BoxDecoration(borderRadius: BorderRadiusDirectional.circular(20),
-                         color: pramcolor,
                        ),
-                       child: const Center(child: Text('have a look on common disease',style: TextStyle(color: seccolor,fontSize: 20),))),
-                 )
+                       Expanded(
+                         child: TextButton(onPressed: (){
+                           navigatto(context,  const RegisterScreen());
+                         }, child: Container(
+                             width: 150,
+                             height: 45,
+                             decoration: BoxDecoration(borderRadius: BorderRadiusDirectional.circular(20),
+                               color: pramcolor,
+                             ),
+                             child: const Center(child: Text('Signup',style: TextStyle(color: seccolor,fontSize: 20),)))),
+                       ),
+                     ],),
+                     SizedBox(height: 20,),
+                     Lottie.asset('assets/Images/mmm.json',fit: BoxFit.cover),
+                     SizedBox(height: 20,),
+
+                     Padding(
+                       padding: const EdgeInsets.all(20.0),
+                       child: Container(
+                           width: double.infinity,
+                           height: 95,
+                           decoration: BoxDecoration(borderRadius: BorderRadiusDirectional.circular(20),
+                             color: pramcolor,
+                           ),
+                           child: const Center(child: Text('have a look on common disease',style: TextStyle(color: seccolor,fontSize: 20,fontWeight: FontWeight.bold),))),
+                     )
 
 
 
 
-               ],
+                   ],
+         ),
+       ),
      ),
     );
   }

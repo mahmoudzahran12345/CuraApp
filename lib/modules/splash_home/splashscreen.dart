@@ -38,14 +38,14 @@ class SplashScreen extends StatelessWidget {
       ),
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(50.0),
           child: AnimatedSplashScreen(
               splash:SingleChildScrollView(
                 child: Column(
                   children: [
                     Stack(
                       alignment: AlignmentDirectional.center,
-                      children: [
+                      children: const [
                         Image(
                           image: AssetImage('assets/Images/logo.png'),
                           width: 350,

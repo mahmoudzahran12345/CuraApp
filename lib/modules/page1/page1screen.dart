@@ -81,7 +81,7 @@ class PageScreen1 extends StatelessWidget {
                                 child: const Text(
                                   'Male',
                                   style: TextStyle(
-                                    color: Colors.black,
+                                    color: seccolor,
                                   ),
                                 ),
 
@@ -115,7 +115,7 @@ class PageScreen1 extends StatelessWidget {
                                 child: const Text(
                                   'Female',
                                   style: TextStyle(
-                                    color: Colors.black,
+                                    color: seccolor,
                                   ),
                                 ),
 

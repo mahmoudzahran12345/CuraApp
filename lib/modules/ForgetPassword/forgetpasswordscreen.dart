@@ -48,7 +48,7 @@ class ForgetPasswordScreen extends StatelessWidget {
                             style: TextStyle(
                                 fontSize: 18.0,
                                 fontWeight: FontWeight.bold,
-                                color: secondColor
+                                color: pramcolor
                             ),
                           ),
                           const SizedBox(height: 20.0),
@@ -59,10 +59,10 @@ class ForgetPasswordScreen extends StatelessWidget {
                                   labelText: '  Email',
                                   border:const OutlineInputBorder(
                                   ) ,
-                                  prefixIcon:   Icon(Icons.email,color: secondColor,),
+                                  prefixIcon:   Icon(Icons.email,color: pramcolor,),
                                   labelStyle:  TextStyle(
                                     fontSize: 20.0,
-                                    color: secondColor,
+                                    color: pramcolor,
                                     fontWeight: FontWeight.bold,
                                   )
                               ),
@@ -77,13 +77,10 @@ class ForgetPasswordScreen extends StatelessWidget {
                                 return null;
                               },
 
-
                             ),
-
 
                           ),
                           const SizedBox(height: 20.0),
-
                           ConditionalBuilder(
                             condition:state is !ResetpasswordLoadingState ,
                             builder:(context)=>SizedBox(
@@ -94,7 +91,7 @@ class ForgetPasswordScreen extends StatelessWidget {
 
                                 },
                                 height: 50,
-                                color: secondColor,
+                                color: pramcolor,
                                 child: const Text(
                                   'Reset Password',
                                   style: TextStyle(

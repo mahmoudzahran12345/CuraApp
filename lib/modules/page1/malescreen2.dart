@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:graduationproject/modules/symptoms/desiase.dart';
 
 import '../../layout/widget/textfield.dart';
 import '../../shared/components/component.dart';
@@ -32,6 +33,7 @@ class MaleScreenRotate extends StatelessWidget {
                         image: AssetImage('assets/Images/00.png'),
                       ),
                       onTap: (){
+                        navigatto(context, Diseases(id: 2,));
                       },
                     ),
                     Row(
@@ -41,25 +43,37 @@ class MaleScreenRotate extends StatelessWidget {
                           child: const Image(
                             image: AssetImage('assets/Images/20.png'),
                           ),
-                          onTap: (){},
+                          onTap: (){
+                            navigatto(context, Diseases(id: 4,));
+
+                          },
                         ),
                         InkWell(
                           child: const Image(
                             image: AssetImage('assets/Images/30.png'),
                           ),
-                          onTap: (){},
+                          onTap: (){
+                            navigatto(context, Diseases(id: 7,));
+
+                          },
                         ),
                         InkWell(
                           child: const Image(
                             image: AssetImage('assets/Images/40.png'),
                           ),
-                          onTap: (){},
+                          onTap: (){
+                            navigatto(context, Diseases(id: 7,));
+
+                          },
                         ),
                         InkWell(
                           child: const Image(
                             image: AssetImage('assets/Images/50.png'),
                           ),
-                          onTap: (){},
+                          onTap: (){
+                            navigatto(context, Diseases(id: 4,));
+
+                          },
                         ),
 
 
@@ -74,7 +88,10 @@ class MaleScreenRotate extends StatelessWidget {
                             child: const Image(
                               image: AssetImage('assets/Images/15.png'),
                             ),
-                            onTap: (){},
+                            onTap: (){
+                              navigatto(context, Diseases(id: 4,));
+
+                            },
                           ),
                         ),
                         Expanded(
@@ -82,7 +99,9 @@ class MaleScreenRotate extends StatelessWidget {
                             child: const Image(
                               image: AssetImage('assets/Images/25.png'),
                             ),
-                            onTap: (){},
+                            onTap: (){
+                              navigatto(context, Diseases(id: 7,));
+                            },
                           ),
                         ),
                         Expanded(
@@ -90,7 +109,10 @@ class MaleScreenRotate extends StatelessWidget {
                             child: const Image(
                               image: AssetImage('assets/Images/35.png'),
                             ),
-                            onTap: (){},
+                            onTap: (){
+                              navigatto(context, Diseases(id: 7,));
+
+                            },
                           ),
                         ),
                         Expanded(
@@ -98,7 +120,10 @@ class MaleScreenRotate extends StatelessWidget {
                             child: const Image(
                               image: AssetImage('assets/Images/45.png'),
                             ),
-                            onTap: (){},
+                            onTap: (){
+                              navigatto(context, Diseases(id: 4,));
+
+                            },
                           ),
                         ),
 
@@ -114,7 +139,8 @@ class MaleScreenRotate extends StatelessWidget {
                             child: const Image(
                               image: AssetImage('assets/Images/2.png'),
                             ),
-                            onTap: (){},
+                            onTap: (){                            navigatto(context, Diseases(id: 4,));
+                            },
                           ),
                         ),
                         Expanded(
@@ -122,7 +148,9 @@ class MaleScreenRotate extends StatelessWidget {
                             child: const Image(
                               image: AssetImage('assets/Images/4.png'),
                             ),
-                            onTap: (){},
+                            onTap: (){
+                              navigatto(context, Diseases(id: 9,));
+                            },
                           ),
                         ),
                         Expanded(
@@ -130,7 +158,10 @@ class MaleScreenRotate extends StatelessWidget {
                             child: const Image(
                               image: AssetImage('assets/Images/6.png'),
                             ),
-                            onTap: (){},
+                            onTap: (){
+                              navigatto(context, Diseases(id: 9,));
+
+                            },
                           ),
                         ),
                         Expanded(
@@ -138,7 +169,10 @@ class MaleScreenRotate extends StatelessWidget {
                             child: const Image(
                               image: AssetImage('assets/Images/8.png'),
                             ),
-                            onTap: (){},
+                            onTap: (){
+                              navigatto(context, Diseases(id: 4,));
+
+                            },
                           ),
                         ),
 
@@ -154,7 +188,10 @@ class MaleScreenRotate extends StatelessWidget {
                             child: const Image(
                               image: AssetImage('assets/Images/3.png'),
                             ),
-                            onTap: (){},
+                            onTap: (){
+                              navigatto(context, Diseases(id: 6,));
+
+                            },
                           ),
                         ),
 
@@ -163,7 +200,10 @@ class MaleScreenRotate extends StatelessWidget {
                             child: const Image(
                               image: AssetImage('assets/Images/789.png'),
                             ),
-                            onTap: (){},
+                            onTap: (){
+                              navigatto(context, Diseases(id: 6,));
+
+                            },
                           ),
                         ),
 
@@ -179,7 +219,10 @@ class MaleScreenRotate extends StatelessWidget {
                             child: const Image(
                               image: AssetImage('assets/Images/001.png'),
                             ),
-                            onTap: (){},
+                            onTap: (){
+                              navigatto(context, Diseases(id: 6,));
+
+                            },
                           ),
                         ),
 
@@ -188,7 +231,10 @@ class MaleScreenRotate extends StatelessWidget {
                             child: const Image(
                               image: AssetImage('assets/Images/101.png'),
                             ),
-                            onTap: (){},
+                            onTap: (){
+                              navigatto(context, const Diseases(id: 6,));
+
+                            },
                           ),
                         ),
 

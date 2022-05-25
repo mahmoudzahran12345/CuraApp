@@ -8,6 +8,7 @@ import 'package:graduationproject/shared/styles/colors.dart';
 
 
 import '../../layout/webview/webviewscreen3.dart';
+import '../../models/symptoms/symptommodel.dart';
 import 'constant.dart';
 
 void navigatto(context,widget)=>Navigator.push(context,
@@ -190,7 +191,7 @@ void showDialog2(BuildContext context,String title) {
     context: context,
     builder: (BuildContext context) {
       return AlertDialog(
-        backgroundColor: secondColor,
+        backgroundColor: pramcolor,
         title:  const Text("Alert!!",style: TextStyle(color: Colors.white),),
         content:   Text(title,style: const TextStyle(color: Colors.white)),
         actions: <Widget>[
@@ -254,7 +255,7 @@ void showDialog78(BuildContext context,String title) {
     context: context,
     builder: (BuildContext context) {
       return AlertDialog(
-        backgroundColor: secondColor,
+        backgroundColor: pramcolor,
         title:  const Text("Alert!!",style: TextStyle(color: Colors.white),),
         content:   Text(title,style: const TextStyle(color: Colors.white)),
         actions: <Widget>[
@@ -291,3 +292,54 @@ Future<dynamic> openMap(double latitude, double longitude) async {
   String googleUrl = 'https://www.google.com/maps/search/?api=1&query=$latitude,$longitude';
   launch(googleUrl);
   }
+List <SymptomsModel>sections = [];
+
+void showDialog80(BuildContext context,) {
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        backgroundColor: pramcolor,
+        title:  const Text("Alert!!",style: TextStyle(color: Colors.white),),
+        actions: <Widget>[
+          ListView.separated(
+              itemBuilder: (context,index)=>Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Column(
+                      children: [
+                        Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(left: 8.0,top: 4.0),
+                              child: Row(
+                                children:  [
+                                  Expanded(
+                                    child: Text('${sections[index].medicine1}',style: const TextStyle(
+                                        fontSize: 20,
+                                        color: pramcolor
+                                    ),),
+                                  ),
+                                  const SizedBox(width: 10.0,),
+                                ],
+                              ),
+                            ),
+
+
+                          ],
+                        ),
+
+                      ],
+                    ),
+                  )
+                ],
+              ),
+              separatorBuilder: (context , index) =>  Container(height: 5,color: pramcolor,),
+              itemCount: sections.length)
+
+        ],
+      );
+    },
+  );
+}

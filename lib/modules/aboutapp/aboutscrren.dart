@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:graduationproject/shared/styles/colors.dart';
+import 'package:lottie/lottie.dart';
 
 class AboutApp extends StatelessWidget {
   const AboutApp({Key? key}) : super(key: key);
@@ -12,31 +13,19 @@ class AboutApp extends StatelessWidget {
         child: Container(
           child: Column(
             children: [
-              Container(
-                height: 220.0,
-                foregroundDecoration: const BoxDecoration(
-                ),
-                decoration: const BoxDecoration(
-                  image: DecorationImage(
-                      alignment: Alignment(-.2, 0),
-                      image: AssetImage(
-                          'assets/Images/profile1.jpg'),
-                      fit: BoxFit.cover),
-                ),
-
-              ),
+              Lottie.asset("assets/Images/about1.json",height: 300),
               const SizedBox(height: 20,),
               Container(
                 width: double.infinity,
                 height: 250,
                 child: Row(
                   children:  [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 10.0),
+                    const Padding(
+                      padding: EdgeInsets.only(left: 10.0),
                       child: CircleAvatar(
                         radius: 74,
-                        backgroundColor: secondColor,
-                        child: const Text(
+                        backgroundColor: pramcolor,
+                        child: Text(
                           'CURA',
                           style: TextStyle(
                             fontSize: 20,
@@ -53,7 +42,7 @@ class AboutApp extends StatelessWidget {
                         width: 200,
                         height: 250,
                         decoration: BoxDecoration(
-                          color: secondColor,
+                          color: pramcolor,
                           border: Border.all(color: Colors.white),
                         ),
                         child: const Padding(
@@ -81,7 +70,7 @@ class AboutApp extends StatelessWidget {
                   width: double.infinity,
                   height: 150.0,
                     decoration: BoxDecoration(
-                        color: secondColor,
+                        color: pramcolor,
                         borderRadius: BorderRadiusDirectional.circular(20.0),
 
                     ),
@@ -109,7 +98,7 @@ class AboutApp extends StatelessWidget {
                   width: double.infinity,
                   height: 220.0,
                   decoration: BoxDecoration(
-                    color: secondColor,
+                    color: pramcolor,
                     borderRadius: BorderRadiusDirectional.circular(20.0),
 
                   ),
@@ -150,7 +139,7 @@ class AboutApp extends StatelessWidget {
                   width: double.infinity,
                   height: 230.0,
                   decoration: BoxDecoration(
-                    color: secondColor,
+                    color: pramcolor,
                     borderRadius: BorderRadiusDirectional.circular(20.0),
 
                   ),

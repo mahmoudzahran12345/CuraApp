@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:graduationproject/shared/cubit/login/blocobserver.dart';
 import 'modules/Home/home1.dart';
 import 'modules/Home/homescreen.dart';
+import 'modules/page1/famelescrren2.dart';
 import 'modules/page1/malescreen.dart';
 import 'modules/splash_home/splashscreen.dart';
 import 'modules/splash_home/splashscreen2.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
             )
         ),
       ),
-      home:       const SplashScreen2(),
+      home:       const SplashScreen(),
     );
   }
 }

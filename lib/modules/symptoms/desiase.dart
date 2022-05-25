@@ -3,22 +3,18 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:graduationproject/models/symptoms/symptommodel.dart';
-
 import '../../layout/webview/webviewscreen.dart';
 import '../../shared/components/component.dart';
 import '../../shared/styles/colors.dart';
-import '../medcine.dart';
 
 class Diseases extends StatefulWidget {
   final int id ;
-
   const Diseases({Key? key,required this.id}) : super(key: key);
-
   @override
   State<Diseases> createState() => _DiseasesState();
 }
-
 class _DiseasesState extends State<Diseases> {
+  SymptomsModel? symptomsModel;
   void initState() {
     // TODO: implement initState
     loadsection();
@@ -31,7 +27,10 @@ class _DiseasesState extends State<Diseases> {
       appBar: AppBar(
         backgroundColor: seccolor,
         elevation: 0.0,
-        title: const Center(child: Text('Card of Symptoms and Diagnosis',style: TextStyle(color: pramcolor),)),
+        title: const Padding(
+          padding: EdgeInsets.only(right: 8.0),
+          child: Center(child: Text('Card of Symptoms and Diagnosis',style: TextStyle(color: pramcolor,fontWeight: FontWeight.bold),)),
+        ),
       ),
       body: ListView.separated(
           itemBuilder: (context,index)=>Column(
@@ -70,7 +69,7 @@ class _DiseasesState extends State<Diseases> {
 
                     ),
                     Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Padding(
                           padding: const EdgeInsets.only(left: 8.0,top: 4.0),
@@ -151,20 +150,95 @@ class _DiseasesState extends State<Diseases> {
                             ],
                           ),
                         ),
-                        MaterialButton(
-                          onPressed: (){
-                            navigatto(context, const Medicine());
-                          },
-                          child: const Text(
-                            'Medicine',
-                            style: TextStyle(
-                              color: pramcolor,
-                              fontSize: 25
+                        Container(
+                          width: 150,
+                          height: 50,
+                          decoration: BoxDecoration(
+                            color: pramcolor,
+                            borderRadius: BorderRadiusDirectional.circular(20)
+                          ),
+                          child: const Center(
+                            child: Text(
+                              'Medicine',
+                              style: TextStyle(
+                                  color: seccolor,
+                                  fontSize: 25
+                              ),
                             ),
                           ),
-
-
                         ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(left: 8.0,top: 4.0),
+                              child: Row(
+                                children:  [
+                                  Expanded(
+                                    child: Text('${sections[index].medicine1}',style: const TextStyle(
+                                        fontSize: 20,
+                                        color: pramcolor
+                                    ),),
+                                  ),
+                                  const SizedBox(width: 10.0,),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 8.0,top: 4.0),
+                              child: Row(
+                                children:  [
+                                  Expanded(
+                                    child: Text('${sections[index].medicine2}',style: const TextStyle(
+                                        fontSize: 20,
+                                        color: pramcolor,
+
+                                        overflow: TextOverflow.ellipsis
+                                    ),),
+                                  ),
+                                  const SizedBox(width: 10.0,),
+
+
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 8.0,top: 4.0),
+                              child: Row(
+                                children:  [
+                                  Expanded(
+                                    child: Text('${sections[index].medicine3}',style: const TextStyle(
+                                      fontSize: 20,
+                                      color: pramcolor,
+
+                                    ),),
+                                  ),
+                                  const SizedBox(width: 10.0,),
+
+
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 8.0,top: 4.0),
+                              child: Row(
+                                children:  [
+                                  Expanded(
+                                    child: Text('${sections[index].medicine4}',style: const TextStyle(
+                                      fontSize: 20,
+                                      color: pramcolor,
+
+                                    ),),
+                                  ),
+                                  const SizedBox(width: 10.0,),
+                                ],
+                              ),
+                            ),
+
+
+                          ],
+                        ),
+
 
                       ],
                     ),
@@ -174,7 +248,7 @@ class _DiseasesState extends State<Diseases> {
               )
             ],
           ),
-          separatorBuilder: (context , index) => const Divider(height: 1,color: Colors.grey,),
+          separatorBuilder: (context , index) =>  Container(height: 2,color: pramcolor,),
           itemCount: sections.length)
     );
   }

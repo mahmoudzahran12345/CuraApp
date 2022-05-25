@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:graduationproject/modules/page1/famelescrren2.dart';
+import 'package:graduationproject/modules/symptoms/desiase.dart';
 
 import '../../layout/widget/textfield.dart';
 import '../../shared/components/component.dart';
@@ -43,6 +44,7 @@ class FemaleScreen extends StatelessWidget {
 
                                 ),
                                 onTap: (){
+                                  navigatto(context, Diseases(id: 2));
                                 },
                               ),
                               Row(
@@ -52,37 +54,55 @@ class FemaleScreen extends StatelessWidget {
                                     child: const Image(
                                       image: AssetImage('assets/Images/f30.png'),
                                     ),
-                                    onTap: (){},
+                                    onTap: (){
+                                      navigatto(context, const Diseases(id: 4));
+
+                                    },
                                   ),
                                   InkWell(
                                     child: const Image(
                                       image: AssetImage('assets/Images/f40.png'),
                                     ),
-                                    onTap: (){},
+                                    onTap: (){
+                                      navigatto(context, const Diseases(id: 4));
+
+                                    },
                                   ),
                                   InkWell(
                                     child: const Image(
                                       image: AssetImage('assets/Images/f50.png'),
                                     ),
-                                    onTap: (){},
+                                    onTap: (){
+                                      navigatto(context, const Diseases(id: 11));
+
+                                    },
                                   ),
                                   InkWell(
                                     child: const Image(
                                       image: AssetImage('assets/Images/f60.png'),
                                     ),
-                                    onTap: (){},
+                                    onTap: (){
+                                      navigatto(context,  const Diseases(id: 3,));
+
+                                    },
                                   ),
                                   InkWell(
                                     child: const Image(
                                       image: AssetImage('assets/Images/f70.png'),
                                     ),
-                                    onTap: (){},
+                                    onTap: (){
+                                      navigatto(context, const Diseases(id: 4));
+
+                                    },
                                   ),
                                   InkWell(
                                     child: const Image(
                                       image: AssetImage('assets/Images/f80.png'),
                                     ),
-                                    onTap: (){},
+                                    onTap: (){
+                                      navigatto(context, const Diseases(id: 4));
+
+                                    },
                                   ),
 
 
@@ -98,25 +118,37 @@ class FemaleScreen extends StatelessWidget {
                                     child: const Image(
                                       image: AssetImage('assets/Images/fa10.png'),
                                     ),
-                                    onTap: (){},
+                                    onTap: (){
+                                      navigatto(context, const Diseases(id: 4));
+
+                                    },
                                   ),
                                   InkWell(
                                     child: const Image(
                                       image: AssetImage('assets/Images/fa20.png'),
                                     ),
-                                    onTap: (){},
+                                    onTap: (){
+                                      navigatto(context, const Diseases(id: 5));
+
+                                    },
                                   ),
                                   InkWell(
                                     child: const Image(
                                       image: AssetImage('assets/Images/fa30.png'),
                                     ),
-                                    onTap: (){},
+                                    onTap: (){
+                                      navigatto(context, const Diseases(id: 10));
+
+                                    },
                                   ),
                                   InkWell(
                                     child: const Image(
                                       image: AssetImage('assets/Images/fa40.png'),
                                     ),
-                                    onTap: (){},
+                                    onTap: (){
+                                      navigatto(context, const Diseases(id: 4));
+
+                                    },
                                   ),
 
 
@@ -134,13 +166,19 @@ class FemaleScreen extends StatelessWidget {
                                     child: const Image(
                                       image: AssetImage('assets/Images/fa25.png'),
                                     ),
-                                    onTap: (){},
+                                    onTap: (){
+                                      navigatto(context, const Diseases(id: 10));
+
+                                    },
                                   ),
                                   InkWell(
                                     child: const Image(
                                       image: AssetImage('assets/Images/fa35.png'),
                                     ),
-                                    onTap: (){},
+                                    onTap: (){
+                                      navigatto(context, const Diseases(id: 10));
+
+                                    },
                                   ),
 
 
@@ -155,7 +193,10 @@ class FemaleScreen extends StatelessWidget {
                                       child: const Image(
                                         image: AssetImage('assets/Images/fam10.png'),
                                       ),
-                                      onTap: (){},
+                                      onTap: (){
+                                        navigatto(context, const Diseases(id: 6));
+
+                                      },
                                     ),
                                   ),
                                   SizedBox(width: 17,),
@@ -164,7 +205,10 @@ class FemaleScreen extends StatelessWidget {
                                       child: const Image(
                                         image: AssetImage('assets/Images/fam20.png'),
                                       ),
-                                      onTap: (){},
+                                      onTap: (){
+                                        navigatto(context, const Diseases(id: 6));
+
+                                      },
                                     ),
                                   ),
 
@@ -180,7 +224,10 @@ class FemaleScreen extends StatelessWidget {
                                       child: const Image(
                                         image: AssetImage('assets/Images/io.png'),
                                       ),
-                                      onTap: (){},
+                                      onTap: (){
+                                        navigatto(context, const Diseases(id: 6));
+
+                                      },
                                     ),
                                   ),
                                   const SizedBox(width: 17,),
@@ -189,7 +236,10 @@ class FemaleScreen extends StatelessWidget {
                                       child: const Image(
                                         image: AssetImage('assets/Images/iu.png'),
                                       ),
-                                      onTap: (){},
+                                      onTap: (){
+                                        navigatto(context, const Diseases(id: 6));
+
+                                      },
                                     ),
                                   ),
 

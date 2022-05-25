@@ -20,42 +20,41 @@ class HomeScreen extends StatelessWidget {
 backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
-        iconTheme: IconThemeData(color: pramcolor),
+        iconTheme: const IconThemeData(color: pramcolor,size: 30),
         elevation: 0,
-        actions:  [
-          TextButton(onPressed: (){
-            navigatto(context,   LoginPage());
-          }, child: Container(
-              width: 70,
-              height: 35,
-              color: pramcolor,
-              child: const Center(child: Text('Login',style: TextStyle(color: seccolor),)))),
-          TextButton(onPressed: (){
-            navigatto(context,  const RegisterScreen());
-          }, child: Container(
-              width: 70,
-              height: 35,
-              color: pramcolor,
-              child: Center(child: const Text('Signup',style: TextStyle(color: seccolor),))))
-        ],
+        title: const Center(child: Text("Home",style: TextStyle(color: pramcolor,fontWeight: FontWeight.bold,),)),
+
       ),
       body: SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
         child: Column(
           children:   [
-            Container(
-              height: 220.0,
-              foregroundDecoration: const BoxDecoration(
+            Row(children: [
+              Expanded(
+                child: TextButton(onPressed: (){
+                  navigatto(context,   LoginPage());
+                }, child: Container(
+                    width: 150,
+                    height: 45,
+                    decoration: BoxDecoration(borderRadius: BorderRadiusDirectional.circular(20),
+                      color: pramcolor,
+                    ),
+                    child: const Center(child: Text('Login',style: TextStyle(color: seccolor,fontSize: 20),)))
+                ),
               ),
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                    alignment: Alignment(-.2, 0),
-                    image: AssetImage(
-                        'assets/Images/home1.jpeg'),
-                    fit: BoxFit.cover),
+              Expanded(
+                child: TextButton(onPressed: (){
+                  navigatto(context,  const RegisterScreen());
+                }, child: Container(
+                    width: 150,
+                    height: 45,
+                    decoration: BoxDecoration(borderRadius: BorderRadiusDirectional.circular(20),
+                      color: pramcolor,
+                    ),
+                    child: const Center(child: Text('Signup',style: TextStyle(color: seccolor,fontSize: 20),)))),
               ),
-
-            ),
+            ],),
+            Lottie.asset("assets/Images/home.json"),
             const SizedBox(height: 20.0),
             Row(
               children: [
@@ -80,21 +79,23 @@ backgroundColor: Colors.white,
                 ),
                 const SizedBox(width: 8.0,),
                 Expanded(
-                  child: Container(
+                  child: SizedBox(
                     width: 180,
                     height: 120,
                     child: SingleChildScrollView(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
-                          Padding(
-                            padding: const EdgeInsets.only(right: 5.0),
-                            child: Text(
-                              'Common Diseases',
-                              style: TextStyle(
-                                color: secondColor,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 22.0,
+                           const Padding(
+                            padding: EdgeInsets.only(right: 5.0),
+                            child: Center(
+                              child: Text(
+                                'Common Diseases',
+                                style: TextStyle(
+                                  color: pramcolor,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 22.0,
+                                ),
                               ),
                             ),
                           ),
@@ -118,15 +119,15 @@ backgroundColor: Colors.white,
                             child: Container(
                               width: 89,
                               height: 25,
-                              color: firstColor,
+                              color: pramcolor,
                               child: MaterialButton(
                                   onPressed: (){
                                        navigatto(context, WebViewExample());
                                   },
-                                child: Text(
+                                child: const Text(
                                   'SeeMore',
                                   style: TextStyle(
-                                    color: secondColor,
+                                    color: seccolor,
                                   ),
 
                                 ),
@@ -150,19 +151,19 @@ backgroundColor: Colors.white,
             Row(
               children: [
                 Expanded(
-                  child: Container(
+                  child: SizedBox(
                     width: 120,
                     height: 180,
                     child: SingleChildScrollView(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Padding(
-                            padding: const EdgeInsets.only(left: 5.0),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 5.0),
                             child: Text(
                               'Symptoms Of\nInfectious Diseases',
                               style: TextStyle(
-                                color: secondColor,
+                                color: pramcolor,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 22.0,
                               ),
@@ -199,16 +200,16 @@ backgroundColor: Colors.white,
                             child: Container(
                               width: 89,
                               height: 25,
-                              color: firstColor,
+                              color: pramcolor,
                               child: MaterialButton(
                                 onPressed: (){
                                   navigatto(context, WebViewExample());
 
                                 },
-                                child: Text(
+                                child: const Text(
                                   'SeeMore',
                                   style: TextStyle(
-                                    color: secondColor,
+                                    color: seccolor,
                                   ),
                                 ),
 
@@ -254,14 +255,14 @@ backgroundColor: Colors.white,
               child: Container(
                 width:double.infinity,
                 height: 40,
-                color: firstColor,
-                child: Center(
+                color: pramcolor,
+                child: const Center(
                   child: Text(
                     'Treatment For Infectious diseases',
                     style: TextStyle(
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold,
-                      color: secondColor
+                      color: seccolor
                     ),
                   ),
                 ),
@@ -297,14 +298,14 @@ backgroundColor: Colors.white,
               child: Container(
                 width:double.infinity,
                 height: 40,
-                color: firstColor,
-                child: Center(
+                color: pramcolor,
+                child: const Center(
                   child: Text(
                     'Hear From Our Specialists',
                     style: TextStyle(
                         fontSize: 22.0,
                         fontWeight: FontWeight.bold,
-                        color: secondColor
+                        color: seccolor
                     ),
                   ),
                 ),
@@ -325,16 +326,16 @@ backgroundColor: Colors.white,
           ),
             child: Column(
               children:  [
-                Container(
+                const SizedBox(
                   height: 82,
-                  child: const Image(
+                  child: Image(
                       image:AssetImage('assets/Images/home4.jpg')
                   ),
                 ),
                 const SizedBox(height: 20.0,),
-                Container(
+                const SizedBox(
                   height: 70,
-                  child: const Text(
+                  child: Text(
                     'Covid-19 Testing:\nWhat You Need To Know',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -360,7 +361,7 @@ backgroundColor: Colors.white,
                       child: Text(
                         'Read More',
                         style: TextStyle(
-                          color: secondColor,
+                          color: pramcolor,
                         ),
                       ),
 
@@ -375,7 +376,7 @@ backgroundColor: Colors.white,
         ),
       ),
     ),
-                SizedBox(width: 10.0,),
+                const SizedBox(width: 10.0,),
                 Expanded(
                   child: Padding(
                     padding:  const EdgeInsets.only(left: 5.0),
@@ -423,7 +424,7 @@ backgroundColor: Colors.white,
                                 child: Text(
                                   'Read More',
                                   style: TextStyle(
-                                    color: secondColor,
+                                    color: pramcolor,
                                   ),
                                 ),
 
@@ -438,7 +439,7 @@ backgroundColor: Colors.white,
                     ),
                   ),
                 ),
-                SizedBox(width: 10.0,),
+                const SizedBox(width: 10.0,),
                 Expanded(
                   child: Padding(
                     padding:  const EdgeInsets.only(left: 5.0),
@@ -493,7 +494,7 @@ backgroundColor: Colors.white,
                                 child: Text(
                                   'Read More',
                                   style: TextStyle(
-                                    color: secondColor,
+                                    color: pramcolor,
                                   ),
                                 ),
 
@@ -545,12 +546,12 @@ backgroundColor: Colors.white,
                   ),
                   Column(
                     children: [
-                      Text('MAHMOUDZAHRAN',style: TextStyle(color: secondColor),
+                      Text('MAHMOUDZAHRAN',style: TextStyle(color: pramcolor),
                       ),
                       const SizedBox(height: 5,),
                       Text(
                         'mhmwdzhran02@gmail.com',
-                        style: TextStyle(color: secondColor),
+                        style: TextStyle(color: pramcolor),
                         overflow: TextOverflow.ellipsis,
                         maxLines: 1,
                         textAlign: TextAlign.justify,
@@ -583,19 +584,18 @@ backgroundColor: Colors.white,
                   child: ItemDrawer(title: 'AboutApp',iconData: Icons.supervisor_account_outlined,)),
               InkWell(
                   onTap: (){
-                   navigatto(context, const LocationScreen());
-
+                    openMap(30.0444, 31.2357 );
                   },
                   child: ItemDrawer(title: 'Location'
                     ,iconData: Icons.location_city,)),
               InkWell(
                   onTap: (){
                     Navigator.pop(context);
-                    navigatto(context, AboutApp());
+                    navigatto(context, const AboutApp());
                   },
                   child: ItemDrawer(title: 'LogOut',iconData: Icons.logout,)),
-              Image(
-                color: secondColor,
+              const Image(
+                color: pramcolor,
 
                   image: AssetImage('assets/Images/bottom.png',
 
