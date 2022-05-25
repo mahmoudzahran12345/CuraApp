@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:graduationproject/layout/webview/webviewScreen2.dart';
 import 'package:graduationproject/modules/aboutapp/aboutscrren.dart';
 import 'package:graduationproject/modules/profile/profilescreen.dart';
@@ -590,8 +591,7 @@ backgroundColor: Colors.white,
                     ,iconData: Icons.location_city,)),
               InkWell(
                   onTap: (){
-                    Navigator.pop(context);
-                    navigatto(context, const AboutApp());
+                    SystemChannels.platform.invokeMethod('SystemNavigator.pop');
                   },
                   child: ItemDrawer(title: 'LogOut',iconData: Icons.logout,)),
               const Image(
